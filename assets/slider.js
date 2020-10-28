@@ -19,4 +19,5 @@ const slidePics = () => {
     },4000);
 
 }
+slidePics();
 
