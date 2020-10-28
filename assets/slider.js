@@ -20,4 +20,3 @@ const slidePics = () => {
 
 }
 slidePics();
-

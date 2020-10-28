@@ -11,6 +11,9 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/styles/images/icons/favicon-16x16.png">
     <script src="assets/index.js" defer></script>
     <script src="assets/preloader.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="Really-Simple-Lightbox-master/js/lightbox.min.js"></script>
+    <link rel="stylesheet" href="Really-Simple-Lightbox-master/css/lightbox.css">
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="assets/styles/preloader.css">
     <link rel="stylesheet" href="assets/styles/slider.css">
@@ -41,8 +44,13 @@
 </div>
 
 <main>
-    <a href="assets/styles/images/gallery1.jpg" class="spec" data-lightbox="mygallery"><img src="assets/styles/images/gallery1.jpg"></a>
-    <a href="assets/styles/images/gallery2.jpg" class="spec" data-lightbox="mygallery"><img src="assets/styles/images/gallery2.jpg"></a>
+    <a href="assets/styles/images/gallery1.jpg" data-lightbox="lightbox-group-1" title="Przykładowe zdjęcie #1">
+        <img class="lightbox-thumbnail" src="assets/styles/images/gallery1.jpg">
+    </a>
+    
+    <a href="assets/styles/images/gallery2.jpg" data-lightbox="lightbox-group-1" title="Przykładowe zdjęcie #2">
+        <img class="lightbox-thumbnail" src="assets/styles/images/gallery2.jpg">
+    </a>
 </main>
 
 <div class="footer">
