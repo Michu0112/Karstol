@@ -5,6 +5,7 @@ preLogo.classList.add('anim');
 
 const preloader = () =>{
 window.addEventListener('load', () => {
+      slidePics();
     preload.classList.add('fade');
   	setTimeout(() => {
         preload.classList.remove('show-preloader');

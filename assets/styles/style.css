@@ -24,6 +24,7 @@ a:visited{
     background-repeat: no-repeat;
     height: 600px;
     width: 100%;
+    transition: 2s;
 }
 #one{
     background-image: url('images/1.jpg');
@@ -33,6 +34,11 @@ a:visited{
 }
 #three{
     background-image: url('images/3.jpg');
+}
+#carpenter{
+    position: absolute;
+    bottom: 0;
+    left: 50px;
 }
 .nav-bar{
     display: flex;
@@ -222,7 +228,7 @@ a:visited{
 .sponsors{
     border-top: 2px solid rgba(172, 116, 67, 0.486);
     border-left: 2px solid rgba(172, 116, 67, 0.486);
-    height: 500px;
+    height: 450px;
 }
 .sponsors p{
     font-size: 1.4em;
@@ -233,10 +239,20 @@ a:visited{
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
     margin: 10px;
     filter: saturate(.4);
+}
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    background-color: rgba(172, 116, 67, 0.486) ;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.1em;
 }
 #obi{
     background-image: url('images/obi.png');
@@ -325,5 +341,9 @@ a:visited{
     .CEO-box:after{
         left: 10%;
         width: 80%;
+    }
+    #carpenter{
+        width:200px;
+        left: 10px;
     }
   }
