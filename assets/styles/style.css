@@ -6,6 +6,13 @@
 body{
     background-color: #c19a6b2d;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+a:visited{
+    color: black;
+}
 .docSlider{
     position: relative;
     height: 600px;
@@ -240,3 +247,83 @@ body{
 #koszalka{
     background-image: url('images/koszalka.jpg')
 }
+@media screen and (max-width: 1312px) {
+    .nav-bar{
+        flex-direction: column;
+    }
+    #logo{
+        width: 100%;
+        padding: 30px;
+    }
+    .docSlider{
+        width: 100%;
+        height: 300px;
+    }
+    .slider-photo{
+        width: 100%;
+        height: 300px;
+    }
+    #nav-buttons{
+        flex-direction: column;
+    }
+    .nav-el{
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .nav-el:after{
+        display: none;
+    }
+    .services{
+        flex-direction: column;
+    }
+    .services div{
+        width: 80%;
+        height: 300px;
+        background-size: cover;
+    }
+    .services div .hover-me{
+        margin-left: 0;
+        color: white;
+        font-size: 1em;
+    }
+    #our-service{
+        font-size: 1.6em;
+    }
+    .why-us-box{
+       margin-top: 100px;
+       background-attachment: scroll;
+       margin-bottom: 50px;
+    }
+    .why-us-header{
+        margin: 0;
+    }
+    .why-us{
+        margin: 0;
+        padding: 30px;
+        width: 100%;
+        font-size: 1.2em;
+    }
+    .ceo-and-sponsors{
+        flex-direction: column;
+    }
+    .sponsors{
+        border-left: none
+    }
+    .sponsor{
+        margin: 0 auto;
+    }
+    .CEO-box{
+        flex-direction: column;
+        height: fit-content;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .CEO-p-box{
+        text-align: center;
+    }
+    .CEO-box:after{
+        left: 10%;
+        width: 80%;
+    }
+  }
