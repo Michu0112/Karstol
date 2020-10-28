@@ -3,6 +3,7 @@ const preLogo = document.getElementById('pre-logo');
 preload.classList.add('show-preloader');
 preLogo.classList.add('anim');
 
+const preloader = () =>{
 window.addEventListener('load', () => {
     preload.classList.add('fade');
   	setTimeout(() => {
@@ -10,3 +11,5 @@ window.addEventListener('load', () => {
         preload.style['display'] = 'none';
   	}, 1000);
 });
+}
+preloader();
