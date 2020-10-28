@@ -1,0 +1,241 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #c19a6b2d;
+}
+.docSlider{
+    position: relative;
+    height: 600px;
+}
+.slider-photo{
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+}
+#one{
+    background-image: url('images/1.jpg');
+}
+#two{
+    background-image: url('images/2.jpg');
+}
+#three{
+    background-image: url('images/3.jpg');
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+}
+#nav-buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-el{
+    padding: 30px;
+    margin: 5px;
+    position: relative;
+    margin-right: 40px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: .3s;
+
+}
+.nav-el:hover:after{
+    width: 100%;
+}
+.nav-el:after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    content: '';
+    background-color: rgb(172,116,67);
+    transition: .3s;
+}
+#logo{
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Turret Road', cursive;
+    font-size: 3.5em;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+#logo a{
+    text-decoration: none;
+}
+#logo a:visited{
+    color: black;
+}
+.brown-end{
+    color: rgb(172,116,67);
+}
+#our-service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin: 50px;
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    font-size: 2.5em;
+}
+#our-service:after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    width: 90px;
+    height: 3px;
+    background-color: rgb(172,116,67);
+}
+#serv-one{
+    background-image: url('images/stairs.jpg');
+}
+#serv-two{
+    background-image: url('images/meble.jpg');
+}
+#serv-three{
+    background-image: url('images/individuals.jpeg');
+}
+.services{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.services div{
+    text-align: center;
+    font-size: 2em;
+    width:450px;
+    height: 400px;
+    margin: 10px;
+    font-family: 'Quicksand', sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: .6s;
+    overflow: hidden;
+    cursor: pointer;
+}
+.services div .hover-me{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    background-color:  rgba(172, 116, 67, 0.726);
+    display: flex;
+    margin: 0;
+    margin-left: -100%;
+    transition: .6s;
+}
+.services div:hover .hover-me{
+    margin-left: 0;
+}
+.why-us-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('images/whyus.jpg');
+    background-size: cover;
+    margin: 200px auto;
+    background-attachment: fixed;
+    height: 500px;
+}
+.why-us-header{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.5em;
+    margin: 50px;
+    height: 80px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.why-us-header:after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    width: 90px;
+    height: 3px;
+    background-color: rgb(172,116,67);
+}
+.why-us{
+    font-size: 1.3em;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    width: 60%;
+    margin: 40px;
+    color: white;
+}
+.CEO-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 50px;
+    margin-left: 50px;
+}
+.CEO-box:after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 500px;
+    bottom: 0;
+    left: 30px;
+    background-color:  rgb(172,116,67);
+}
+.CEO-p-box p{
+    font-size: 1.4em;
+    font-family: 'Quicksand', sans-serif;
+}
+.CEO img{
+    border-radius: 50%;
+    width: 180px;
+}
+.CEO-p-box{
+    padding: 20px;
+}
+.ceo-and-sponsors{
+    display: flex;
+    justify-content: space-around;
+}
+.sponsors{
+    border-top: 2px solid rgba(172, 116, 67, 0.486);
+    border-left: 2px solid rgba(172, 116, 67, 0.486);
+    height: 500px;
+}
+.sponsors p{
+    font-size: 1.4em;
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px;
+}
+.sponsor{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    filter: saturate(.4);
+}
+#obi{
+    background-image: url('images/obi.png');
+}
+#merlin{
+    background-image: url('images/merlin.png')
+}
+#koszalka{
+    background-image: url('images/koszalka.jpg')
+}
