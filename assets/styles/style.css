@@ -19,28 +19,6 @@ a{
 a:visited{
     color: black;
 }
-.docSlider{
-    position: relative;
-    height: 600px;
-}
-.slider-photo{
-    position: absolute;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 600px;
-    width: 100%;
-    transition: 2s;
-}
-#one{
-    background-image: url('images/1.jpg');
-}
-#two{
-    background-image: url('images/2.jpg');
-}
-#three{
-    background-image: url('images/3.jpg');
-}
 .nav-bar{
     display: flex;
     justify-content: space-between;
@@ -74,6 +52,27 @@ a:visited{
     content: '';
     background-color: rgb(172,116,67);
     transition: .3s;
+}
+.swiper-container{
+    height: 600px;
+}
+#slide1{
+    background-image: url('images/1.jpg');
+}
+#slide2{
+    background-image: url('images/2.jpg');
+}
+#slide3{
+    background-image: url('images/3.jpg');
+}
+.swiper-slide{
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 #logo{
     font-family: 'Orbitron', sans-serif;
@@ -295,15 +294,6 @@ a:visited{
         width: 100%;
         padding: 30px;
     }
-    .docSlider{
-        width: 100%;
-        height: 300px;
-    }
-    .slider-photo{
-        width: 100%;
-        height: 300px;
-        z-index: 50;
-    }
     #nav-buttons{
         flex-direction: column;
     }
@@ -462,6 +452,15 @@ a:visited{
     .nav-bar{
         width: 250px;
         height: 450px;
+    }
+    .swiper-container{
+        height: 300px;
+    }
+    #slide1{
+        background-position: -400px;
+    }
+    #slide3{
+        background-position: -500px;
     }
     .menu-btn{
         height: 50px;

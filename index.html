@@ -10,7 +10,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/styles/images/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/styles/images/icons/favicon-16x16.png">
     <script src="assets/index.js" defer></script>
-    <script src="assets/slider.js" defer></script>
+    <!-- <script src="assets/slider.js" defer></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="assets/preloader.js" defer></script>
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="assets/styles/preloader.css">
@@ -44,11 +46,25 @@
         </div>
     </div>
 
-        <div class="docSlider">
-            <div class="slider-photo" id="one"></div>
-            <div class="slider-photo" id="two"></div>
-            <div class="slider-photo" id="three"></div>
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide" id="slide1"></div>
+            <div class="swiper-slide" id="slide2"></div>
+            <div class="swiper-slide" id="slide3"></div>
         </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </div>
+
 
         <div id="our-service">
             <p>NASZE USŁUGI</p>
@@ -101,5 +117,36 @@
         
         <div>Michu&WebDeveloping Sp.zo.o</div>
     </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+
+        autoplay: {
+            delay: 5000,
+        },
+        fadeEffect: {
+        crossFade: true
+        },
+        speed: 2000,
+        loop: true,
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+  
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+})
+    </script>
 </body>
 </html>
