@@ -3,3 +3,34 @@
     margin: 0;
     padding: 0;
 }
+main{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    gap: 20px;
+}
+.header{
+    display: none;
+}
+.thumbnail{
+    width: 400px;
+}
+@media screen and (max-width: 1312px){
+    main{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0;
+        margin-bottom: 100px;
+    }
+    img{
+        width: 300px;
+    }
+    .header{
+        display: block;
+        font-family: 'Orbitron', sans-serif;
+        font-family: 'Turret Road', cursive;
+        font-size: 3em;
+        text-align: center;
+        margin: 20px;
+    }
+}
