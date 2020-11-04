@@ -1,0 +1,19 @@
+.contact-info{
+    border: 2px solid rgb(172,116,67);
+    margin: 20px;
+}
+p.contact-info-head{
+    font-size: 2em;
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Turret Road', cursive;
+}
+p{
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px;
+    font-size: 1.2em;
+}
+@media screen and (max-width: 1312px){
+    body{
+        height: 100vh;
+    }
+}

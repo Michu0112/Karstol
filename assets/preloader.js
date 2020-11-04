@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
   	setTimeout(() => {
         preload.classList.remove('show-preloader');
         preload.style['display'] = 'none';
-  	}, 1000);
+  	}, 900);
 });
 }
 preloader();
