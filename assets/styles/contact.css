@@ -13,7 +13,7 @@ p{
     font-size: 1.2em;
 }
 @media screen and (max-width: 1312px){
-    body{
-        height: 100vh;
+    .footer{
+        position: relative;
     }
 }
