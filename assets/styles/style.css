@@ -57,13 +57,25 @@ a:visited{
     height: 600px;
 }
 #slide1{
-    background-image: url('images/1.jpg');
+    background-image: url('images/sliderphotos/slider1.jpg');
 }
 #slide2{
-    background-image: url('images/2.jpg');
+    background-image: url('images/sliderphotos/slider2.jpg');
 }
 #slide3{
-    background-image: url('images/3.jpg');
+    background-image: url('images/sliderphotos/slider3.jpg');
+}
+#slide4{
+    background-image: url('images/sliderphotos/slider4.jpg');
+}
+#slide5{
+    background-image: url('images/sliderphotos/slider5.jpg');
+}
+#slide6{
+    background-image: url('images/sliderphotos/slider6.jpg');
+}
+#slide7{
+    background-image: url('images/sliderphotos/slider7.jpg');
 }
 .swiper-slide{
     background-size: cover;
@@ -108,13 +120,7 @@ a:visited{
     background-color: rgb(172,116,67);
 }
 #serv-one{
-    background-image: url('images/stairs.jpg');
-}
-#serv-two{
-    background-image: url('images/meble.jpg');
-}
-#serv-three{
-    background-image: url('images/individuals.jpeg');
+    background-image: url('images/main-bg.jpg');
 }
 .services{
     display: flex;
@@ -124,8 +130,8 @@ a:visited{
 .services div{
     text-align: center;
     font-size: 2em;
-    width:450px;
-    height: 400px;
+    width:550px;
+    height: 500px;
     margin: 10px;
     font-family: 'Quicksand', sans-serif;
     background-position: center;
@@ -342,20 +348,15 @@ a:visited{
     }
   }
  @media screen and (max-width: 1024px) and (min-width: 416px ){
-    #slide1{
-        background-position: -800px;
-    }
-    #slide3{
-        background-position: -800px;
-    }
     .nav-bar{
         width: 350px;
+        height: 400px;
     }
  }
  @media screen and (min-height: 320px) and (max-height: 512px){
      .nav-bar{
          top:10px;
-         height: 370px;
+         height: 340px;
          width: 250px;
      }
      .nav-el{
@@ -387,7 +388,7 @@ a:visited{
   @media screen and (max-width: 540px){
     .nav-bar{
         width: 40%;
-        height: 60%;
+        height: 45%;
     }
     .menu-btn{
         height: 50px;
@@ -405,12 +406,6 @@ a:visited{
     }
     .swiper-container{
         height: 300px;
-    }
-    #slide1{
-        background-position: -400px;
-    }
-    #slide3{
-        background-position: -500px;
     }
     .menu-btn{
         height: 50px;

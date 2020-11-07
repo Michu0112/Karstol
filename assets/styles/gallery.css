@@ -6,10 +6,15 @@
 main{
     margin: 50px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     text-align: center;
     align-items: center;
     gap: 20px;
+}
+main div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header{
     display: none;
@@ -26,36 +31,15 @@ main{
     left: 50%;
     margin-left: -45px;
 }
-.footer{
-    position: absolute;
-    bottom: 0;
-}
 body{
     height: 100vh;
 }
 .lightbox-thumbnail{
-    height: 350px;
+    height: 250px;
     background-repeat: no-repeat;
     background-size: cover;
 }
-#g1{
-    background-image: url('images/gallery1-min.jpg');
-}
-#g2{
-    background-image: url('images/gallery2-min.jpg');
-}
-#g3{
-    background-image: url('images/gallery3-min.jpg');
-}
-#g4{
-    background-image: url('images/gallery4-min.jpg');
-}
-#g5{
-    background-image: url('images/gallery5-min.jpg');
-}
-#g6{
-    background-image: url('images/gallery6-min.jpg');
-}
+
 @media screen and (max-width: 1312px){
     body{
         height: fit-content;
@@ -65,8 +49,13 @@ body{
         margin: 0;
         margin-bottom: 100px;
     }
+    g-min{
+        height: 200px;
+        width: 200px;
+    }
     .lightbox-thumbnail{
-        width: 80%;
+        width: 400px;
+        height: 430px;
         margin: 50px auto;
     }
     .header{
@@ -76,5 +65,32 @@ body{
         font-size: 3em;
         text-align: center;
         margin: 20px;
+    }
+}
+@media screen and (max-width: 768px){
+    main{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .lightbox-thumbnail{
+        height: 200px;
+        width: 200px;
+        margin: 50px auto;
+    }
+}
+@media screen and (max-width: 376px){
+    main{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .lightbox-thumbnail{
+        height: 250px;
+        width: 250px;
+        margin: 50px auto;
+    }
+}
+@media screen and (max-width: 350px){
+    .lightbox-thumbnail{
+        height: 200px;
+        width: 200px;
+        margin: 50px auto;
     }
 }
