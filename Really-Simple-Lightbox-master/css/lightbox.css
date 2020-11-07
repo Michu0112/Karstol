@@ -64,14 +64,8 @@
   opacity: 0;
   background-color: transparent; }
   .lightbox-nav a#close {
-    float: right;
-    padding: 20px 300px;
-    font-size: 30px;
-    line-height: 20px;
-    text-decoration: none;
-    color: grey;
-    background-color: transparent;
-    cursor: pointer; }
+    font-size: 25px;
+}
   .lightbox-nav span {
     padding: 3px 0;
     color: grey;
@@ -91,6 +85,7 @@
     text-decoration: none;
     background-color: transparent;
     cursor: pointer; 
+    opacity: .5;
   }
     .lightbox-nav a#next{
       right: 0;
@@ -110,7 +105,6 @@
     .lightbox-nav a#prev i{
       left:0;
     }
-  .lightbox-nav a#close:hover,
   .lightbox-nav a#next:hover,
   .lightbox-nav a#prev:hover {
     color: #777; }
