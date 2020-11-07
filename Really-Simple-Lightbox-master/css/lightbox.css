@@ -40,7 +40,8 @@
   padding-top: 10px;
   font-family: Helvetica Heue, Arial, sans-serif;
   background-color: #fff;
-  box-shadow: 0 0 5px black; }
+  box-shadow: 0 0 5px black; 
+}
 
 .lightbox-title {
   padding: 5px 10px 10px 15px;
@@ -56,38 +57,69 @@
     margin: 0; }
 
 .lightbox-nav {
-  width: 160px;
+  width: 100%;
   padding: 0 5px 5px 10px;
-  float: right;
+  display: flex;
+  justify-content: space-between;
   opacity: 0;
-  background-color: #fff; }
+  background-color: transparent; }
   .lightbox-nav a#close {
     float: right;
-    padding: 5px 10px;
-    font-size: 16px;
+    padding: 20px 300px;
+    font-size: 30px;
     line-height: 20px;
     text-decoration: none;
-    color: #000;
-    background-color: #fff;
+    color: grey;
+    background-color: transparent;
     cursor: pointer; }
   .lightbox-nav span {
     padding: 3px 0;
-    color: #000000;
+    color: grey;
     font-size: 16px; }
   .lightbox-nav a#next,
   .lightbox-nav a#prev {
     margin: -8px 2px 0;
-    padding: 5px 10px;
-    font-size: 16px;
+    padding: 10px 10px;
+    z-index: 1000000;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 90%;
+    bottom: 0;
+    position: absolute;
     text-decoration: none;
-    color: #000;
-    background-color: #fff;
-    cursor: pointer; }
+    background-color: transparent;
+    cursor: pointer; 
+  }
+    .lightbox-nav a#next{
+      right: 0;
+    }
+    .lightbox-nav a#prev{
+      left: 0;
+    }
+    .lightbox-nav a#next i,
+    .lightbox-nav a#prev i
+    {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      margin-top: -50px;
+      padding: 20px;
+    }
+    .lightbox-nav a#prev i{
+      left:0;
+    }
   .lightbox-nav a#close:hover,
   .lightbox-nav a#next:hover,
   .lightbox-nav a#prev:hover {
     color: #777; }
-
+    #count{
+      padding: 20px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 .lightbox img {
   opacity: 0;
   margin: 0 10px;
