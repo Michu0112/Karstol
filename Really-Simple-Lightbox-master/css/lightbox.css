@@ -24,7 +24,7 @@
   height: 94px;
   z-index: 1001;
   font: italic 24px/74px "Helvetica Neue", Arial, sans-serif;
-  color: #77f;
+  color: rgb(170, 126, 69);
   text-align: center;
   cursor: pointer; }
 
@@ -58,41 +58,45 @@
 
 .lightbox-nav {
   width: 100%;
-  padding: 0 5px 5px 10px;
+  padding:0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   opacity: 0;
-  background-color: transparent; }
+  background-color: transparent;
+  padding: 10px;
+}
   .lightbox-nav a#close {
-    font-size: 25px;
     color: white;
     background-color: rgba(0, 0, 0, 0.438);
-    padding: 15px 17px;
+    padding: 30px 30px;
     margin: 10px;
     border-radius: 50%;
     height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
+    font-size: 40px;
 }
   .lightbox-nav span {
-    padding: 3px 0;
+    padding: 3px 5px;
     color: white;
-    font-size: 1.3em; }
+    font-size: 1.3em; 
+    font-family: 'Quicksand', sans-serif;
+  }
   .lightbox-nav a#next,
   .lightbox-nav a#prev {
-    margin: -8px 2px 0;
-    padding: 10px 10px;
     z-index: 1000000;
     font-size: 50px;
     display: flex;
     justify-content: center;
-    width: 50%;
-    height: 90%;
-    bottom: 0;
-    position: absolute;
+    width: 25%;
+    height: fit-content;
+    position: relative;
     text-decoration: none;
     cursor: pointer; 
     color: white;
-    opacity: .8;
   }
     .lightbox-nav a#next{
       right: 0;
@@ -103,14 +107,14 @@
     .lightbox-nav a#next i,
     .lightbox-nav a#prev i
     {
-      position: absolute;
       background-color: rgba(0, 0, 0, 0.473);
       border-radius: 50%;
       right: 30px;
-      top: 50%;
       margin-top: -50px;
-      padding: 20px;
       opacity: .8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .lightbox-nav a#prev i{
       left:30px;
@@ -118,11 +122,12 @@
     }
 
     #count{
-      padding: 20px 20px;
       display: flex;
       justify-content: center;
       align-items: center;
       opacity: 1;
+      width: 100px;
+      height: 30px;
     }
 .lightbox img {
   opacity: 0;
