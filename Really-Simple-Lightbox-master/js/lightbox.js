@@ -83,8 +83,8 @@ version: 1.0
         // Get img width and height (any oversized images are rendered smaller)
         $('.lightbox img').load(function () {
           $(this).css({
-            maxWidth: $(window).width() * 0.8,
-            maxHeight: $(window).height() * 0.8
+            maxWidth: $(window).width() * 2,
+            maxHeight: $(window).height() * 2
           });
           var imageWidth = $('.lightbox img').width(),
             imageHeight = $('.lightbox img').height();
