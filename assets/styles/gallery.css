@@ -130,4 +130,7 @@ body{
         width: 200px;
         margin: 50px auto;
     }
+    .lightbox-loading{
+        top: 270px;
+    }
 }
