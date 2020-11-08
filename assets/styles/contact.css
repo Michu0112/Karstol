@@ -19,16 +19,6 @@ body{
     position: absolute;
     bottom:0;
 }
-@media screen and (max-width:500px){
-    .footer{
-        font-size: .9em;
-        flex-direction: column;
-        height: fit-content;
-    }
-    .footer div{
-        margin: 3px 0;
-    }
-}
 @media screen and (max-width:374px){
     .footer{
         font-size: .9em;
