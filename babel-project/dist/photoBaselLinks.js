@@ -1,4 +1,4 @@
-const Links = [
+const linksMax = [
     'https://lh3.googleusercontent.com/zzQGsoVFyjDDg9DrXpIQ3hiH4k3T5Xpo5Sb9SXAQJCaSFnoh6w1FE0Ytmn5bmmVFBuckDW8HXcsSBK8nmooySKvs9IHfhIWMTKFY8sRseGgy8pOxWt2pBJJmHioRLTh19Juq-dXjzQ=w2400'
 
     ,
@@ -77,7 +77,30 @@ const Links = [
 
     'https://lh3.googleusercontent.com/AnhrtFrHaOyWfQuma3TWeEwLR0qG43aWbmXSwEXIaBA3ehymirB1wOHrsxGHOfVkX6nys-s4T7S2OS2nGK-RCoCIfoj19Idhig6imRRU4gXipPjZ_6fUzVPRv9BzPzmnjUtupIbBPg=w2400'
 
+]
+
+const linksMin = [
+
+    'https://lh3.googleusercontent.com/XZISGEM0n0a3j9FoN8NE5KeHJTDXIjaWEq50mez5E_PaMGUHm7PVXYa_3mKeG-rbivKUyiodEgqhDcbMAxmLYuYll3CXRzYy7BvJR7Xa0L-DEWi9QgG0whCm2MXcszlZVLqJKokXVg=w2400'
+
     ,
 
-    ''
+    'https://lh3.googleusercontent.com/84b-H9fac7Mb3jVRA69w_dB_VyckVLkvtgxHzU4mcerHuNZTq7fFPl-8nEDatO6xjvpXzsa34-NfPw6hghtg8i-lgpH73EUVgTEsIcqJ-9VD5FVdA6eUmskWSssVQuoF33_t09Q2VQ=w2400'
+
+    ,
+
+    'https://lh3.googleusercontent.com/YgOdmfPWpJv6LriFDfY1IwAVBI3nqKMcI9cx6c9TTgSRuH9yWUwSM0KJ2ik1PcaPX1vFnqZJ75Z-7sXxORjUdX6Cb9LLTbzLTtOKTbUu9wxT76o2PEl-HIb716cflEYxk0hX5b6LEQ=w2400'
+
+    ,
+
+    'https://lh3.googleusercontent.com/ahoOmdu1LH5YZYNsZc3Rkh5Aar1psoCKnYCVoxAz9HqHXD4nOPJwjRr5tiayLmIbdmCtANbU4EA7PuF9ZOAkkn9fzNGUJ-RysjH_EbWrs2HxzfcDOY0MRBtzLahxcGotE1vrKul25g=w2400'
+
+    ,
+
+    'https://lh3.googleusercontent.com/Y6U5iSqPr6h8F2Dgv8teTD_cJcB7VgNfi_PzDI9odDIFMwULTUqwaPyJuCWdI0HDOV4GbBobQ23sL5rMTQliAKpd9Xey-20hxiHb3wG2dRfJVMLKg3ollXqpwAIV8B42o5gMSePbGw=w2400'
+
+    ,
+
+    'https://lh3.googleusercontent.com/2LNzNMsBWMT4D8GXG2_S5_IlMYxBbZXWzc7wzVKUUkfhz_lgnJHYsdqK0ynEiVecXuQoJO2zGMLpQHbxExXQNAWEUlqfb2Jxa3K-VwPQ3f6DoborvRCw29thpA__W_WsRxwIy44TTQ=w2400'
+
 ]
