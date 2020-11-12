@@ -5,6 +5,8 @@
 }
 main{
     margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     text-align: center;
@@ -47,6 +49,7 @@ body{
     .lightbox-nav a#close{
         width: 40px;
         height: 40px;
+        padding: 30px;
     }
     .lightbox-nav a#prev i,
     .lightbox-nav a#next i{
