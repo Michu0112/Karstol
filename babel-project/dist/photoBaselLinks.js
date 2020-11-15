@@ -81,12 +81,12 @@ const linksMax = [
 
 const linksMin = [
 
-    'https://lh3.googleusercontent.com/Iq7Y-OoNRj3poizo8I4RJQFS_vKakYS4gBJD4QxB7P1vnPgy-MqYZGHcdvI4jkYW4aZ9sPRkRWOnawwlS6FEk4CHzOV7PZcO1EEudJ0GewytnW8cYLYtT0XUjG8_8dUTnay5bOGnTQ=w2400'
+    'https://lh3.googleusercontent.com/aOB37jHuQ1-hhtPblFpicqZaAolyyI4kENi0eecnDNgxRYq8Hff9UZu4ycn-6FWdwujF9KjhDwxvP7_7MvI2uv_wW8zRHgKgnWIyabml2ngyDXc4gfkatQ7Tfe5eCB8DA567N2NHxw=w2400'
 
     ,
 
-    'https://lh3.googleusercontent.com/aOB37jHuQ1-hhtPblFpicqZaAolyyI4kENi0eecnDNgxRYq8Hff9UZu4ycn-6FWdwujF9KjhDwxvP7_7MvI2uv_wW8zRHgKgnWIyabml2ngyDXc4gfkatQ7Tfe5eCB8DA567N2NHxw=w2400'
-
+    'https://lh3.googleusercontent.com/Iq7Y-OoNRj3poizo8I4RJQFS_vKakYS4gBJD4QxB7P1vnPgy-MqYZGHcdvI4jkYW4aZ9sPRkRWOnawwlS6FEk4CHzOV7PZcO1EEudJ0GewytnW8cYLYtT0XUjG8_8dUTnay5bOGnTQ=w2400'
+    
     ,
 
     'https://lh3.googleusercontent.com/MqDEPg13lnl1oxPFjUyAtxBU9AmMW5wGoG5b44zdqmcFwRPddQPc96j5_1jNnxXHLfWAX5At5k727rK1ZPEy4DCxb-F4O-dyzwgfTeBK7_6uppKmP_678P-Jux7yrtJIHLpwhYnRpA=w2400'
