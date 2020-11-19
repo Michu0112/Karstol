@@ -37,6 +37,9 @@ navEls.forEach(function (el) {
 });
 buttonsOfPages.forEach(function (el, idx) {
   el.addEventListener('click', function () {
+    window.onbeforeload = function(){
+      main.innerHTML = '';
+    }
     outputtingPhotos(amountOfPics[idx] - 12, amountOfPics[idx]);
     localStorage.setItem("numPage", idx);
     localStorage.setItem("cont", arr);
@@ -45,7 +48,6 @@ buttonsOfPages.forEach(function (el, idx) {
 });
 
 var outputtingPhotos = function outputtingPhotos(start, amount) {
-  main.innerHTML = '';
 
   for (var O = start; O < amount; O++) {
     arr.push("<div>\n    <a href=\"".concat(linksMax[O], "\" data-lightbox=\"lightbox-group-1\">\n        <div class=\"lightbox-thumbnail\" class=\"g-min\" style=\"background-image: url('").concat(linksMin[O], "'); background-repeat: no-repeat;\n        background-size: cover;\"></div>\n    </a>\n    </div>"));

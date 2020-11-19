@@ -58,7 +58,7 @@ a:visited{
     height: 600px;
 }
 #slide1{
-    background-image: url('https://lh3.googleusercontent.com/eYtqHSCVgMt0MQO_pyewfRXnZNBjnyQSk3VDUbihShaG-es8CT99F64JqqNjdKkYBwT8JhtlTa66qwd-3GCvYRj_HvpJ_7BGQD4NkwsyyJY-Y_ozzveBPpqvdXmHGD86HiUxHV8eYQ=w2400');
+    background-image: url('https://lh3.googleusercontent.com/QJwVhhwoG_mZAUdcMksCZbU6L1kI4yQx8xJmRnpvPPrZKtgsURUeLidKLAZhRknAJvbLXrZqkxBfEW1_J1ql5Y2ZVLyq7xDX2M-j3oLxdV0oL5x1nvk8xEimZTjSubYUhTM7L1EYBg=w2400');
 }
 #slide2{
     background-image: url('https://lh3.googleusercontent.com/H1Uggbr-fCnKHII73V6PC-P7miTiHT-laoMHFbArfeQ_-ErqyZtcHFvO84lTWScxGsJzxWk46YFHU-mmuU3OlpClJxI-nPw2OEiJT1OeCEe7csQqZJ6o4l_R0vT8ZATxffg8lcW-tg=w2400');
@@ -67,16 +67,7 @@ a:visited{
     background-image: url('https://lh3.googleusercontent.com/1XXyYLPG5VUrgS2cQmWhW0zXMfUc8szIgwjjrpCx3ozv-p-QIsPFi6K9N2yc8SydAEpRxoXU5yTRFzOgazft-jfONDQpi7bsVqKf4Hoc4o-s_xc32jthLONy0ESmWjRUTXT8avPwIQ=w2400');
 }
 #slide4{
-    background-image: url('https://lh3.googleusercontent.com/QJwVhhwoG_mZAUdcMksCZbU6L1kI4yQx8xJmRnpvPPrZKtgsURUeLidKLAZhRknAJvbLXrZqkxBfEW1_J1ql5Y2ZVLyq7xDX2M-j3oLxdV0oL5x1nvk8xEimZTjSubYUhTM7L1EYBg=w2400');
-}
-#slide5{
-    background-image: url('https://lh3.googleusercontent.com/qOfMPDKX7Xni4xmH50TUwVsGZcy5i04MNGo-dMJMusTfmZXoiOLEqzNkodPkfij2SqZCsPjrzswfdl3aU9FFMs54R3qYgKcexayUWWEaCPdFyxgD2ppBkha-U5BzxUHcdcHtL_txtg=w2400');
-}
-#slide6{
-    background-image: url('https://lh3.googleusercontent.com/K4ve-Mo9v3nFvK6eRa2cUksrbNPpfKbGx3tbGwe-GatXwj3oWO4EC5BYrFnN9WO_Ciw9WC2P61p3R54A6KewkT0qP8VS0vTtMZRxhqt9IKui7ebxcWQAR0voL_0iZDOufh6ZzCmfHA=w2400');
-}
-#slide7{
-    background-image: url('https://lh3.googleusercontent.com/uJwM1EhJNd7TLtEqt0FcshAtzi2MkT59kGnb7P0Kf8WUwim7UduP2kuG2-nBuSUwy2FqTp43TkjUyCD-31Zvrcu8rMVc7WyDAha3pkYYZndx72KsWYZKzEg03MGeWQbBuohIDR5tDg=w2400');
+    background-image: url('https://lh3.googleusercontent.com/eYtqHSCVgMt0MQO_pyewfRXnZNBjnyQSk3VDUbihShaG-es8CT99F64JqqNjdKkYBwT8JhtlTa66qwd-3GCvYRj_HvpJ_7BGQD4NkwsyyJY-Y_ozzveBPpqvdXmHGD86HiUxHV8eYQ=w2400');
 }
 .swiper-slide{
     background-size: cover;
