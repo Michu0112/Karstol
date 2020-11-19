@@ -30,7 +30,7 @@ const firstOutPut = (start,amount) => {
         firstOutPut(0,12);
     }
 
-const navEls = document.querySelectorAll('a');
+const navEls = document.querySelectorAll('.memory-trigger');
 navEls.forEach((el)=>{
     el.addEventListener('click', () =>{
         outputtingPhotos(0,12);
@@ -49,10 +49,10 @@ buttonsOfPages.forEach( (el,idx) =>{
 
 const outputtingPhotos = (start,amount) =>{
     main.innerHTML = '';
-    for(let i = start; i < amount;i++){
+    for(let O = start; O < amount;O++){
     arr.push(`<div>
-    <a href="${linksMax[i]}" data-lightbox="lightbox-group-1">
-        <div class="lightbox-thumbnail" class="g-min" style="background-image: url('${linksMin[i]}'); background-repeat: no-repeat;
+    <a href="${linksMax[O]}" data-lightbox="lightbox-group-1">
+        <div class="lightbox-thumbnail" class="g-min" style="background-image: url('${linksMin[O]}'); background-repeat: no-repeat;
         background-size: cover;"></div>
     </a>
     </div>`)

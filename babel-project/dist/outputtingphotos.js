@@ -28,7 +28,7 @@ if (t) {
   firstOutPut(0, 12);
 }
 
-var navEls = document.querySelectorAll('a');
+var navEls = document.querySelectorAll('.memory-trigger');
 navEls.forEach(function (el) {
   el.addEventListener('click', function () {
     outputtingPhotos(0, 12);
@@ -47,7 +47,7 @@ buttonsOfPages.forEach(function (el, idx) {
 var outputtingPhotos = function outputtingPhotos(start, amount) {
   main.innerHTML = '';
 
-  for (var _i = start; _i < amount; _i++) {
-    arr.push("<div>\n    <a href=\"".concat(linksMax[_i], "\" data-lightbox=\"lightbox-group-1\">\n        <div class=\"lightbox-thumbnail\" class=\"g-min\" style=\"background-image: url('").concat(linksMin[_i], "'); background-repeat: no-repeat;\n        background-size: cover;\"></div>\n    </a>\n    </div>"));
+  for (var O = start; O < amount; O++) {
+    arr.push("<div>\n    <a href=\"".concat(linksMax[O], "\" data-lightbox=\"lightbox-group-1\">\n        <div class=\"lightbox-thumbnail\" class=\"g-min\" style=\"background-image: url('").concat(linksMin[O], "'); background-repeat: no-repeat;\n        background-size: cover;\"></div>\n    </a>\n    </div>"));
   }
 };
