@@ -47,8 +47,8 @@ version: 1.0
       function lightboxLoading() {
         $('<div class="lightbox-loading"><i class="fa fa-spinner fa-3x fa-spin"></i></div>').hide().appendTo('body');
         $('.lightbox-loading').css({
-          top: $(window).height() / 2 - 47,
-          left: $(window).width() / 2 - 47
+          top: $(window).height() /  - 47,
+          left: $(window).width() /  - 47
         });
         $('.lightbox-loading').show(0);
         // (Click anywhere to abort if image fails to load)
