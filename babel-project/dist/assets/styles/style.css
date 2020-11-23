@@ -91,17 +91,8 @@ a:visited{
     align-items: center;
     justify-content: center;
     display: flex;
-    background-image: linear-gradient(to right,rgb(172,116,67) , transparent);
     font-size: 4em;
     position: relative;
-}
-#logo::after{
-    content: '';
-    width: 100%;
-    height: 3px;
-    background-image: linear-gradient(to right, rgb(145, 76, 16), transparent);
-    position: absolute;
-    bottom: 0;
 }
 #logo a{
     text-decoration: none;
@@ -135,51 +126,62 @@ a:visited{
     margin-left: -45px;
 }
 #serv-one{
-    background-image: url('images/main-bg.jpg');
+    background-image: url('images/dab.jpeg');
+}
+#serv-two{
+    background-image: url('images/jesion.jpeg');
+}
+#serv-three{
+    background-image: url('images/buk.jpg');
+}
+#serv-four{
+    background-image: url('images/sosna.jpg');
+}
+.services-box{
+    background-color: rgba(172, 116, 67, 0.274);
+    margin: 0 20px;
+    font-family: 'Quicksand', sans-serif;
+}
+.services-box p{
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 .services{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(172, 116, 67, 0.507);
-    margin: 0 20px;
 }
 .services div{
     text-align: center;
     font-size: 2em;
     width:550px;
     height: 500px;
-    margin: 40px;
-    font-family: 'Quicksand', sans-serif;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     transition: .6s;
     overflow: hidden;
-    cursor: pointer;
+    margin: 2%;
+    filter: saturate(50%);
+    border-radius: 10px;
 }
 .services div .hover-me{
     height: 100%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     font-size: 1.4em;
-    background-color:  rgba(172, 116, 67, 0.726);
     display: flex;
     margin: 0;
-    margin-left: -100%;
-    transition: .6s;
-}
-.services div:hover .hover-me{
-    margin-left: 0;
 }
 .why-us-box{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-image: url('images/whyus.jpg');
+    background-image: url('images/jasny-dab.jpg');
     background-size: cover;
-    margin: 200px auto;
+    margin: 100px auto;
     background-attachment: fixed;
     height: 500px;
 }
@@ -192,7 +194,7 @@ a:visited{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .why-us-header:after{
     position: absolute;
@@ -204,13 +206,21 @@ a:visited{
     left: 50%;
     margin-left: -45px;
 }
+.price .why-us-header:nth-child(1):after{
+    width: 60px;
+    margin-left: -30px;
+}
 .why-us{
-    font-size: 1.3em;
+    font-size: 2em;
     font-family: 'Quicksand', sans-serif;
     text-align: center;
     width: 60%;
     margin: 40px;
-    color: white;
+    color: rgb(0, 0, 0);
+    margin: 10px auto;
+}
+.price{
+    margin-bottom: 100px;
 }
 .footer{
     width: 100%;
@@ -246,13 +256,9 @@ a:visited{
         transition: .4s ease-in-out;
         top: 20px;
         height: 100vh;
-        width: 30%;
+        width: 100%;
         justify-content: start;
         justify-content: flex-start;
-    }
-    #logo{
-        border-top-left-radius: 10px;
-        box-shadow: 0 0 10px 1px black;
     }
     a{
         padding: 0;
@@ -289,9 +295,11 @@ a:visited{
         width: 80%;
         height: 300px;
         background-size: cover;
+        border-top: 2px solid  rgba(172, 116, 67, 0.815);
+        border-left: 2px solid  rgba(172, 116, 67, 0.815);
+        margin: 30px 0;
     }
     .services div .hover-me{
-        margin-left: 0;
         color: white;
         font-size: 1em;
     }
@@ -314,18 +322,16 @@ a:visited{
     }
     /* hamburger menu */
     .menu-btn{
-        left: 80%;
+        right: 10px;
         display: flex;
         justify-content: center;
         align-items: center;
         width: 80px;
         height: 80px;
         transition:  all .4s ease-in-out;
-        border: 3px solid black;
-        z-index: 150;
+        z-index: 120000;
         cursor: pointer;
-        background-color: rgba(172, 116, 67, 0.842);
-        top: 20px;
+        top: 30px;
         overflow: hidden;
         position: fixed;
     }
@@ -377,26 +383,21 @@ a:visited{
   }
  @media screen and (max-width: 1024px) and (min-width: 416px ){
     .nav-bar{
-        width: 350px;
+        width: 100%;
     }
  }
  @media screen and (min-height: 320px) and (max-height: 512px){
      .nav-bar{
          top:10px;
-         width: 250px;
      }
      .nav-el{
         font-size: 1.1em;
      }
  }
   @media screen and (max-width: 540px){
-    .nav-bar{
-        width: 250px;
-    }
     .menu-btn{
         height: 50px;
         width: 50px;
-        left: 75%;
     }
     .nav-el{
         font-size: 1.4em;
@@ -413,9 +414,6 @@ a:visited{
     }
 }
 @media screen and (max-width: 415px) {
-    .nav-bar{
-        width: 250px;
-    }
     .swiper-container{
         height: 300px;
     }
@@ -437,22 +435,15 @@ a:visited{
     }
 }
 @media screen and (max-width: 320px){
-    .nav-bar{
-        width: 200px;
-    }
     .nav-el{
         font-size: .9em;
         padding: 10px;
     }
 }
 @media screen and (max-width: 280px){
-    .nav-bar{
-        width: 70%;
-    }
     .menu-btn{
         height: 50px;
         width: 50px;
-        left: 75%;
     }
     #logo{
         padding: 10px;

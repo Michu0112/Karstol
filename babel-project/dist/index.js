@@ -9,7 +9,6 @@ menuBtn.addEventListener('click', function () {
     menuBtn.classList.add('open');
     menuOpen = true;
     navBar.style.right = 0;
-    menuBtn.style.left = '10%';
     backDrop.style.display = 'block';
     setTimeout(function () {
       backDrop.style.backgroundColor = 'rgba(0, 0, 0, 0.616)';
@@ -18,7 +17,6 @@ menuBtn.addEventListener('click', function () {
     menuBtn.classList.remove('open');
     menuOpen = false;
     navBar.style.right = '-100%';
-    menuBtn.style.left = '80%';
     backDrop.style.backgroundColor = 'transparent';
     setTimeout(function () {
       backDrop.style.display = 'none';
