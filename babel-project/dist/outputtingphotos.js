@@ -19,22 +19,31 @@ if (t) {
   var newT = t.split(',');
 
   for (var i = 0; i < 12; i++) {
-    console.log(i);
     main.innerHTML += newT[i];
   }
+
+  buttonsOfPages[p].style.transform = 'translateY(-5px)';
+  console.log(p);
 } else {
   firstOutPut(0, 12);
+  p = 0;
+  navEls[p].style.transform = 'translateY(-5px)';
+  console.log(p);
 }
 
 window.addEventListener('beforeunload', function () {
   outputtingPhotos(0, 12);
   localStorage.setItem("cont", arr);
+  buttonsOfPages.forEach(function (el) {
+    el.style.transform = 'translateY(0px)';
+  });
 });
 var navEls = document.querySelectorAll('.memory-trigger');
 navEls.forEach(function (el) {
   el.addEventListener('click', function () {
     outputtingPhotos(0, 12);
     localStorage.setItem("cont", arr);
+    localStorage.setItem("numPage", 0);
   });
 });
 buttonsOfPages.forEach(function (el, idx) {

@@ -21,17 +21,24 @@ const firstOutPut = (start,amount) => {
         main.innerHTML = '';
     let newT = t.split(',');
     for(let i = 0; i < 12; i++){
-        console.log(i);
         main.innerHTML += newT[i];
         }
+        buttonsOfPages[p].style.transform = 'translateY(-5px)';
+        console.log(p);
     }
     else{
         firstOutPut(0,12);
+        p = 0;
+        navEls[p].style.transform = 'translateY(-5px)';
+        console.log(p);
     }
 
 window.addEventListener('beforeunload', () =>{
     outputtingPhotos(0,12);
     localStorage.setItem("cont", arr);
+    buttonsOfPages.forEach((el) =>{
+        el.style.transform = 'translateY(0px)';
+    })
 });
 
 const navEls = document.querySelectorAll('.memory-trigger');
@@ -39,6 +46,7 @@ navEls.forEach((el)=>{
     el.addEventListener('click', () =>{
         outputtingPhotos(0,12);
         localStorage.setItem("cont", arr);
+        localStorage.setItem("numPage", 0);
     })
 })
 
