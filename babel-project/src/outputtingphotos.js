@@ -4,6 +4,24 @@ const buttonsOfPages = document.querySelectorAll('.page-button');
 let amountOfPics = [12,24,36,48,60,72,84,96];
 let arr = [];
 
+let t = localStorage.getItem("cont");
+let p = localStorage.getItem("numPage");
+if(t){
+    main.innerHTML = '';
+let newT = t.split(',');
+for(let i = 0; i < 12; i++){
+    main.innerHTML += newT[i];
+    }
+    buttonsOfPages[p].style.transform = 'translateY(-5px)';
+    console.log(p);
+}
+else{
+    firstOutPut(0,12);
+    p = 0;
+    navEls[p].style.transform = 'translateY(-5px)';
+    console.log(p);
+}
+
 const firstOutPut = (start,amount) => {
     for(let i = start; i < amount;i++){
         main.innerHTML += `<div>
@@ -15,23 +33,6 @@ const firstOutPut = (start,amount) => {
     }
 }
 
-    let t = localStorage.getItem("cont");
-    let p = localStorage.getItem("numPage");
-    if(t){
-        main.innerHTML = '';
-    let newT = t.split(',');
-    for(let i = 0; i < 12; i++){
-        main.innerHTML += newT[i];
-        }
-        buttonsOfPages[p].style.transform = 'translateY(-5px)';
-        console.log(p);
-    }
-    else{
-        firstOutPut(0,12);
-        p = 0;
-        navEls[p].style.transform = 'translateY(-5px)';
-        console.log(p);
-    }
 
 window.addEventListener('beforeunload', () =>{
     outputtingPhotos(0,12);
@@ -60,7 +61,6 @@ buttonsOfPages.forEach( (el,idx) =>{
 })
 
 const outputtingPhotos = (start,amount) =>{
-    main.innerHTML = '';
     for(let O = start; O < amount;O++){
     arr.push(`<div>
     <a href="${linksMax[O]}" data-lightbox="lightbox-group-1">
