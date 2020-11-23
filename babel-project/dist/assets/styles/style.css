@@ -389,24 +389,6 @@ a:visited{
         font-size: 1.1em;
      }
  }
- @media screen and (max-height: 320px){
-    .nav-el{
-        font-size: .9em;
-        padding: 10px;
-    }
- }
- @media screen and (max-height: 280px){
-    .nav-el{
-        font-size: 1em;
-        padding: 10px;
-    }
-    .nav-bar{
-        width: 300px;
-    }
-    #logo{
-        padding: 10px;
-    }
- }
   @media screen and (max-width: 540px){
     .nav-bar{
         width: 250px;
@@ -420,7 +402,17 @@ a:visited{
         font-size: 1.4em;
     }
   }
-  @media screen and (max-width: 415px) {
+  @media screen and (max-width:500px){
+    .footer{
+        font-size: .9em;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .footer div{
+        margin: 3px 0;
+    }
+}
+@media screen and (max-width: 415px) {
     .nav-bar{
         width: 250px;
     }
@@ -435,21 +427,6 @@ a:visited{
         font-size: 130%;
     }
   }
-  @media screen and (max-width: 320px){
-    .nav-bar{
-        width: 200px;
-    }
-  }
-  @media screen and (max-width:500px){
-    .footer{
-        font-size: .9em;
-        flex-direction: column;
-        height: fit-content;
-    }
-    .footer div{
-        margin: 3px 0;
-    }
-}
 @media screen and (max-width:374px){
     .footer{
         font-size: .9em;
@@ -459,7 +436,16 @@ a:visited{
         font-size: 3em;
     }
 }
-  @media screen and (max-width: 280px){
+@media screen and (max-width: 320px){
+    .nav-bar{
+        width: 200px;
+    }
+    .nav-el{
+        font-size: .9em;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 280px){
     .nav-bar{
         width: 70%;
     }
@@ -468,7 +454,11 @@ a:visited{
         width: 50px;
         left: 75%;
     }
+    #logo{
+        padding: 10px;
+    }
     .nav-el{
         font-size: 1.3em;
+        padding: 10px;
     }
   }

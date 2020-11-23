@@ -121,7 +121,6 @@ body{
         height: 50px;
     }
 }
-
 @media screen and (max-width: 847px){
     main{
         grid-template-columns: repeat(2,1fr);
@@ -134,7 +133,7 @@ body{
     .lightbox-nav a#next,
     .lightbox-nav a#prev{
         padding: 0px 0%;
-        font-size: 25px;
+        font-size: 20px;
     }
     .lightbox-nav a#prev i,
     .lightbox-nav a#next i{
@@ -142,6 +141,13 @@ body{
         height: 50px;
         margin: 0;
         padding: 0;
+    }
+    .lightbox-nav a#close{
+        font-size: 20px;
+        padding: 20px;
+    }
+    .lightbox-nav span#count{
+        font-size: .9em;
     }
 }
 @media screen and (max-width: 455px){
@@ -162,18 +168,5 @@ body{
     }
     .lightbox-loading{
         top: 270px;
-    }
-}
-@media screen and (max-width: 847px){
-    .lightbox-nav a#next,
-    .lightbox-nav a#prev{
-        font-size: 20px;
-    }
-    .lightbox-nav a#close{
-        font-size: 20px;
-        padding: 20px;
-    }
-    .lightbox-nav span#count{
-        font-size: .9em;
     }
 }

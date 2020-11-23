@@ -18,16 +18,16 @@ body{
     position: absolute;
     bottom:0;
 }
-@media screen and (max-width:380px){
-    .footer{
-        font-size: .9em;
-        position: relative;
-    }
-}
 @media screen and (min-height: 580px){
     .footer{
         font-size: .9em;
         position: absolute;
         bottom: 0;
+    }
+}
+@media screen and (max-width:380px){
+    .footer{
+        font-size: .9em;
+        position: relative;
     }
 }
