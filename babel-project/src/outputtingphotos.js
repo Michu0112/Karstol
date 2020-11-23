@@ -24,11 +24,15 @@ const firstOutPut = (start,amount) => {
         console.log(i);
         main.innerHTML += newT[i];
         }
-        console.log(p)
     }
     else{
         firstOutPut(0,12);
     }
+
+window.addEventListener('beforeunload', () =>{
+    outputtingPhotos(0,12);
+    localStorage.setItem("cont", arr);
+});
 
 const navEls = document.querySelectorAll('.memory-trigger');
 navEls.forEach((el)=>{

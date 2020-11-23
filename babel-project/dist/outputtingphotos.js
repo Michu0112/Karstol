@@ -22,12 +22,14 @@ if (t) {
     console.log(i);
     main.innerHTML += newT[i];
   }
-
-  console.log(p);
 } else {
   firstOutPut(0, 12);
 }
 
+window.addEventListener('beforeunload', function () {
+  outputtingPhotos(0, 12);
+  localStorage.setItem("cont", arr);
+});
 var navEls = document.querySelectorAll('.memory-trigger');
 navEls.forEach(function (el) {
   el.addEventListener('click', function () {
