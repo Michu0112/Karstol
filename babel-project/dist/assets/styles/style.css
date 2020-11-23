@@ -5,12 +5,10 @@
 }
 body{
     background-color: #c19a6b6b;
-}
-html, body {
-    overflow-x: hidden;
-}
-body{
     position: relative;
+}
+body {
+    overflow-x: hidden;
 }
 ::-webkit-scrollbar {
     width: 17px;
@@ -262,14 +260,11 @@ a:visited{
         position: absolute;
         z-index: 100000;
         background-color: white;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
         width: 250px;
         right: -100%;
         position: fixed;
         transition: .4s ease-in-out;
-        top: 20px;
-        height: 100vh;
+        height: 100%;
         width: 100%;
         justify-content: start;
         justify-content: flex-start;
@@ -355,7 +350,7 @@ a:visited{
         background-color: black;
         border-radius: 15px;
         box-shadow: 0 2px 5px rgba(172, 116, 67, 0.486);
-        transition: all .4s ease-in-out;
+        transition: all .8s ease-in-out;
     }
     .menu-btn__burger::before,
     .menu-btn__burger::after{
