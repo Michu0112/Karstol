@@ -27,7 +27,7 @@ if (t) {
 } else {
   firstOutPut(0, 12);
   p = 0;
-  navEls[p].style.transform = 'translateY(-5px)';
+  buttonsOfPages[p].style.transform = 'translateY(-5px)';
   console.log(p);
 }
 
