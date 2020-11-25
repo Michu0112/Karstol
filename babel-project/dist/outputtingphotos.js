@@ -31,13 +31,6 @@ if (t) {
   console.log(p);
 }
 
-window.addEventListener('beforeunload', function () {
-  outputtingPhotos(0, 12);
-  localStorage.setItem("cont", arr);
-  buttonsOfPages.forEach(function (el) {
-    el.style.transform = 'translateY(0px)';
-  });
-});
 var navEls = document.querySelectorAll('.memory-trigger');
 navEls.forEach(function (el) {
   el.addEventListener('click', function () {

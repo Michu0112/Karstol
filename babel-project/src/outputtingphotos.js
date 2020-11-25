@@ -34,14 +34,6 @@ else{
 }
 
 
-window.addEventListener('beforeunload', () =>{
-    outputtingPhotos(0,12);
-    localStorage.setItem("cont", arr);
-    buttonsOfPages.forEach((el) =>{
-        el.style.transform = 'translateY(0px)';
-    })
-});
-
 const navEls = document.querySelectorAll('.memory-trigger');
 navEls.forEach((el)=>{
     el.addEventListener('click', () =>{
