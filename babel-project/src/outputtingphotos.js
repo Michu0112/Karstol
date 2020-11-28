@@ -24,13 +24,11 @@ for(let i = 0; i < 12; i++){
     main.innerHTML += newT[i];
     }
     buttonsOfPages[p].style.transform = 'translateY(-5px)';
-    console.log(p);
 }
 else{
     firstOutPut(0,12);
     p = 0;
     buttonsOfPages[p].style.transform = 'translateY(-5px)';
-    console.log(p);
 }
 
 

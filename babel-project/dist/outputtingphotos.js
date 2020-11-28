@@ -23,12 +23,10 @@ if (t) {
   }
 
   buttonsOfPages[p].style.transform = 'translateY(-5px)';
-  console.log(p);
 } else {
   firstOutPut(0, 12);
   p = 0;
   buttonsOfPages[p].style.transform = 'translateY(-5px)';
-  console.log(p);
 }
 
 var navEls = document.querySelectorAll('.memory-trigger');
