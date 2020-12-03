@@ -8,14 +8,12 @@ var engConHeaders = ['Address', 'Telephone', 'E-mail'];
 
 if (lang) {
   if (lang === 'uk') {
-    var docNamePath = window.location.pathname;
-    var docName = docNamePath.split('/').pop().toString();
     document.title = 'Karstol - Professional joinery services';
     document.querySelectorAll('.nav-span').forEach(function (el, idx) {
       el.textContent = engNavBar[idx];
     });
 
-    if (docName == 'index.html') {
+    if (document.getElementById('service-header')) {
       document.getElementById('service-header').innerHTML = "OFFER";
       document.querySelectorAll('.hover-me').forEach(function (el, idx) {
         el.textContent = engOffer[idx];
@@ -27,9 +25,9 @@ if (lang) {
       document.querySelector('.why-us').innerHTML = 'I offer measurement, execution and installation of <span class="brown-end">wooden stairs.</span> Stairs are made with the highest precision and adjusted to customer requirements. The offer includes <span class="brown-end">self-supporting stairs</span> and stairs for <span class="brown-end">concrete</span>.';
       document.querySelectorAll('.why-us')[1].innerHTML = 'The <span class="brown-end">price</span> of stairs is set <span class="brown-end">individually</span>. <span class="brown-end">Free measurement and and arrive</span> on an agreed date.';
       document.getElementById('author').textContent = "The website was created by Micha\u0142 Pachuc";
-    } else if (docName == 'galeria.html') {
+    } else if (document.getElementById('galleryIdentifier')) {
       document.querySelector('.header').innerHTML = "Gal<span class=\"brown-end\">lery</span>";
-    } else if (docName == 'contact.html') {
+    } else if (document.getElementById('contactIdentifier')) {
       document.querySelector('.header').innerHTML = "Con<span class=\"brown-end\">tact</span>";
       document.querySelectorAll('.contact-info-head').forEach(function (el, idx) {
         el.innerHTML = engConHeaders[idx];

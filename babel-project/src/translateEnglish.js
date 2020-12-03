@@ -6,13 +6,11 @@ const engHeaders = ['Why me?','Price?'];
 const engConHeaders = ['Address', 'Telephone', 'E-mail'];
 if(lang){
     if(lang === 'uk'){
-            let docNamePath = window.location.pathname;
-            let docName = docNamePath.split('/').pop().toString();
             document.title = 'Karstol - Professional joinery services';
             document.querySelectorAll('.nav-span').forEach( (el,idx) => {
                 el.textContent = engNavBar[idx];
             });
-            if(docName == 'index.html'){
+            if(document.getElementById('service-header')){
             document.getElementById('service-header').innerHTML = "OFFER";
             document.querySelectorAll('.hover-me').forEach( (el,idx) =>{
                 el.textContent = engOffer[idx];
@@ -25,10 +23,10 @@ if(lang){
             document.querySelectorAll('.why-us')[1].innerHTML = 'The <span class="brown-end">price</span> of stairs is set <span class="brown-end">individually</span>. <span class="brown-end">Free measurement and and arrive</span> on an agreed date.';
             document.getElementById('author').textContent = `The website was created by Michał Pachuc`;
         }
-        else if(docName == 'galeria.html'){
+        else if(document.getElementById('galleryIdentifier')){
             document.querySelector('.header').innerHTML = `Gal<span class="brown-end">lery</span>`;
         }
-        else if(docName == 'contact.html'){
+        else if(document.getElementById('contactIdentifier')){
             document.querySelector('.header').innerHTML = `Con<span class="brown-end">tact</span>`;
             document.querySelectorAll('.contact-info-head').forEach((el,idx) =>{
                el.innerHTML = engConHeaders[idx]; 
