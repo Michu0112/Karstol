@@ -279,7 +279,7 @@ a:visited{
     .nav-bar{
         flex-direction: column;
         position: absolute;
-        z-index: 100000;
+        z-index: 1000;
         background-color: white;
         width: 250px;
         right: -100%;
@@ -371,7 +371,7 @@ a:visited{
         width: 80px;
         height: 80px;
         transition:  all .4s ease-in-out;
-        z-index: 120000;
+        z-index: 1200;
         cursor: pointer;
         top: 30px;
         overflow: hidden;
