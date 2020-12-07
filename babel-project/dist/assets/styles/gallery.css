@@ -43,11 +43,11 @@ body{
     display: flex;
     justify-content: flex-start;
     align-self: center;
-    margin: 50px 0 50px 7.5%;
+    margin: 50px 0 50px 2%;
     position: relative;
     padding-bottom: 20px;
 }
-.page-buttons div{
+.page-button{
     font-family: 'Quicksand', sans-serif;
     display: flex;
     justify-content: center;
@@ -57,9 +57,9 @@ body{
     border-radius: 10px;
     height: 40px;
     background: rgb(172, 116, 67);
-    margin-right: 15px;
     cursor: pointer;
     transition: .3s;
+    margin: 5px;
 }
 .page-buttons:after{
     content: '';
