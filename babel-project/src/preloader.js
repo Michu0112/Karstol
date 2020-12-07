@@ -1,5 +1,5 @@
 const body = document.querySelector('body');
-body.insertAdjacentHTML('afterbegin',`<div class="preload">
+body.insertAdjacentHTML('afterbegin',`<div class="preload" style="font-family: 'Turret Road', cursive;">
       <div class="circles-group">
           <div class="logo" id="pre-logo"><span>Kar</span><span class="brown-end">stol</span></div>
       </div>
