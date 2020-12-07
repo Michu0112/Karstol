@@ -24,11 +24,13 @@ for(let i = 0; i < 12; i++){
     main.innerHTML += newT[i];
     }
     buttonsOfPages[p].style.transform = 'translateY(-5px)';
+    buttonsOfPages[p].style.background = 'rgba(172, 116, 67,0.473)';
 }
 else{
     firstOutPut(0,12);
     p = 0;
     buttonsOfPages[p].style.transform = 'translateY(-5px)';
+    buttonsOfPages[p].style.background = 'rgba(172, 116, 67,0.473)';
 }
 
 

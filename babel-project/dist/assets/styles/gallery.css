@@ -44,6 +44,8 @@ body{
     justify-content: flex-start;
     align-self: center;
     margin: 50px 0 50px 7.5%;
+    position: relative;
+    padding-bottom: 20px;
 }
 .page-buttons div{
     font-family: 'Quicksand', sans-serif;
@@ -52,12 +54,20 @@ body{
     align-items: center;
     width: 40px;
     font-size: 1.4rem;
-    border-radius: 5px;
+    border-radius: 50%;
     height: 40px;
-    background-image: linear-gradient(to bottom, rgb(172, 116, 67) 60%, transparent);
+    background: rgb(172, 116, 67);
     margin-right: 15px;
     cursor: pointer;
     transition: .3s;
+}
+.page-buttons:after{
+    content: '';
+    background-color: rgba(172, 116, 67);
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom:0;
 }
 .page-buttons div:hover{
     transform: translateY(-8px);
