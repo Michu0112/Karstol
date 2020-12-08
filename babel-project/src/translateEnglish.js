@@ -11,7 +11,7 @@ if(lang){
                 el.textContent = engNavBar[idx];
             });
             if(document.getElementById('service-header')){
-            document.getElementById('service-header').innerHTML = "OFFER";
+            document.getElementById('service-header').innerHTML = "WOODEN STAIRS OF";
             document.querySelectorAll('.hover-me').forEach( (el,idx) =>{
                 el.textContent = engOffer[idx];
             });
