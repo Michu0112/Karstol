@@ -269,6 +269,12 @@ a:visited{
     font-size: 1.1em;
     padding: 10px;
 }
+.footer img{
+    width: 50px;
+}
+.footer a{
+    padding: 0;
+}
 #obi{
     background-image: url('images/obi.png');
 }
