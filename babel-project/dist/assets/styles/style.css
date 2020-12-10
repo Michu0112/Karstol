@@ -276,6 +276,10 @@ a:visited{
 .footer img{
     width: 32px;
     height: 32px;
+    margin: 0 5px;
+}
+.footer img[alt="olx"]{
+    border-radius: 7px;
 }
 .footer a{
     padding: 0;
