@@ -269,11 +269,23 @@ a:visited{
     font-size: 1.1em;
     padding: 10px;
 }
+.footer div{
+    width: 100%;
+    text-align: center;
+}
 .footer img{
-    width: 50px;
+    width: 32px;
 }
 .footer a{
     padding: 0;
+}
+.footer p{
+    margin-right: 10px;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #obi{
     background-image: url('images/obi.png');
@@ -432,6 +444,15 @@ a:visited{
         display: none;
     }
   }
+  @media screen and (max-width:880px){
+    .footer{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .footer div{
+        margin: 3px 0;
+    }
+}
  @media screen and (max-width: 1024px) and (min-width: 416px ){
     .nav-bar{
         width: 100%;
@@ -456,9 +477,6 @@ a:visited{
         font-size: .9em;
         flex-direction: column;
         height: fit-content;
-    }
-    .footer div{
-        margin: 3px 0;
     }
 }
 @media screen and (max-width: 415px) {
