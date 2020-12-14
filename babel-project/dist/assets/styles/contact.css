@@ -14,6 +14,14 @@ p{
 body{
     height: 100vh;
 }
+.logoKarstol{
+    width: 250px;
+    align-self: center;
+}
+.logo-container-saw{
+    display: flex;
+    justify-content: center;
+}
 .footer{
     position: absolute;
     bottom:0;
