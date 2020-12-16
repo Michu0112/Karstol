@@ -1,14 +1,14 @@
-
 const main = document.querySelector('main');
-const buttonsOfPages = document.querySelectorAll('.page-button');
-let amountOfPics = [12,24,36,48,60,72,84,96];
+const buttonsOfPages = document.querySelectorAll('button');
 let arr = [];
 
-const firstOutPut = (start,amount) => {
-    for(let i = start; i < amount;i++){
+
+const firstOutPut = () =>{
+    main.innerHTML = '';
+    for(let i = 0; i <= linksMaxConcrete.length;i++){
         main.innerHTML += `<div>
-        <a href="${linksMax[i]}" data-lightbox="lightbox-group-1">
-            <div class="lightbox-thumbnail" class="g-min" style="background-image: url('${linksMin[i]}'); background-repeat: no-repeat;
+        <a href="${linksMaxConcrete[i]}" data-lightbox="lightbox-group-1">
+            <div class="lightbox-thumbnail" class="g-min" style="background-image: url('${linksMinConcrete[i]}'); background-repeat: no-repeat;
             background-size: cover;"></div>
         </a>
         </div>`;
@@ -16,49 +16,46 @@ const firstOutPut = (start,amount) => {
 }
 
 let t = localStorage.getItem("cont");
-let p = localStorage.getItem("numPage");
+let p = localStorage.getItem("back");
 if(t){
+    buttonsOfPages[p].style.backgroundColor = "rgba(172, 116, 67)";
     main.innerHTML = '';
-let newT = t.split(',');
-for(let i = 0; i < 12; i++){
+    let newT = t.split(',');
+    for(let i = 0; i < linksMaxConcrete.length; i++){
     main.innerHTML += newT[i];
     }
-    buttonsOfPages[p].style.transform = 'translateY(-5px)';
-    buttonsOfPages[p].style.background = 'rgba(172, 116, 67,0.473)';
 }
 else{
-    firstOutPut(0,12);
-    p = 0;
-    buttonsOfPages[p].style.transform = 'translateY(-5px)';
-    buttonsOfPages[p].style.background = 'rgba(172, 116, 67,0.473)';
+    buttonsOfPages[0].style.backgroundColor = "rgba(172, 116, 67)";
+    firstOutPut();
 }
 
 
-const navEls = document.querySelectorAll('.memory-trigger');
-navEls.forEach((el)=>{
-    el.addEventListener('click', () =>{
-        outputtingPhotos(0,12);
-        localStorage.setItem("cont", arr);
-        localStorage.setItem("numPage", 0);
-    })
-})
-
 buttonsOfPages.forEach( (el,idx) =>{
-    el.addEventListener('click', () =>{
-        outputtingPhotos(amountOfPics[idx]-12,amountOfPics[idx]);
-        localStorage.setItem("numPage", idx);
-        localStorage.setItem("cont", arr );
-        window.location.reload();
-    })
-})
 
-const outputtingPhotos = (start,amount) =>{
-    for(let O = start; O < amount;O++){
+    el.addEventListener('click',()=>{
+        if(idx === 0){
+            localStorage.setItem("back", idx);
+            prepareOutPut(linksMaxConcrete,linksMinConcrete);
+            window.location.reload();
+        }
+        else{
+            localStorage.setItem("back", idx);
+            window.location.reload();
+            prepareOutPut(linksMaxSelfsupport, linksMinSelfSupport);
+        }
+    });
+});
+
+
+const prepareOutPut = (maxArray,minArray) =>{
+    for(let O = 0; O < maxArray.length;O++){
     arr.push(`<div>
-    <a href="${linksMax[O]}" data-lightbox="lightbox-group-1">
-        <div class="lightbox-thumbnail" class="g-min" style="background-image: url('${linksMin[O]}'); background-repeat: no-repeat;
+    <a href="${maxArray[O]}" data-lightbox="lightbox-group-1">
+        <div class="lightbox-thumbnail" class="g-min" style="background-image: url('${minArray[O]}'); background-repeat: no-repeat;
         background-size: cover;"></div>
     </a>
-    </div>`)
+    </div>`);
     }
+    localStorage.setItem("cont", arr );
 }

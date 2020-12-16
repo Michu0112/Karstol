@@ -14,7 +14,7 @@ if (lang) {
     });
 
     if (document.getElementById('service-header')) {
-      document.getElementById('service-header').innerHTML = "WOODEN STAIRS";
+      document.getElementById('service-header').innerHTML = "WOODEN STAIRS OF";
       document.querySelectorAll('.hover-me').forEach(function (el, idx) {
         el.textContent = engOffer[idx];
       });
