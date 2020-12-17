@@ -10,6 +10,7 @@ if(lang){
             document.querySelectorAll('.nav-span').forEach( (el,idx) => {
                 el.textContent = engNavBar[idx];
             });
+            document.querySelector('.author').textContent = `The website was created by Michał Pachuc`;
             if(document.getElementById('service-header')){
             document.getElementById('service-header').innerHTML = "WOODEN STAIRS OF";
             document.querySelectorAll('.hover-me').forEach( (el,idx) =>{
@@ -21,7 +22,6 @@ if(lang){
             })
             document.querySelector('.why-us').innerHTML = 'I offer measurement, execution and installation of <span class="brown-end">wooden stairs.</span> Stairs are made with the highest precision and adjusted to customer requirements. The offer includes <span class="brown-end">self-supporting stairs</span> and stairs for <span class="brown-end">concrete</span>.';
             document.querySelectorAll('.why-us')[1].innerHTML = 'The <span class="brown-end">price</span> of stairs is set <span class="brown-end">individually</span>. <span class="brown-end">Free measurement and and arrive</span> on an agreed date.';
-            document.getElementById('author').textContent = `The website was created by Michał Pachuc`;
         }
         else if(document.getElementById('galleryIdentifier')){
             document.querySelector('.header').innerHTML = `Gal<span class="brown-end">lery</span>`;
