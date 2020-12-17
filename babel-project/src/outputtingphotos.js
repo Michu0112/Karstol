@@ -1,11 +1,11 @@
 const main = document.querySelector('main');
 const buttonsOfPages = document.querySelectorAll('button');
 let arr = [];
-
+let idx = 0;
 
 const firstOutPut = () =>{
     main.innerHTML = '';
-    for(let i = 0; i <= linksMaxConcrete.length;i++){
+    for(let i = 0; i <= linksMaxConcrete.length-1;i++){
         main.innerHTML += `<div>
         <a href="${linksMaxConcrete[i]}" data-lightbox="lightbox-group-1">
             <div class="lightbox-thumbnail" class="g-min" style="background-image: url('${linksMinConcrete[i]}'); background-repeat: no-repeat;
@@ -17,7 +17,7 @@ const firstOutPut = () =>{
 
 let t = localStorage.getItem("cont");
 let p = localStorage.getItem("back");
-if(t){
+if(t && p){
     buttonsOfPages[p].style.backgroundColor = "rgba(172, 116, 67)";
     main.innerHTML = '';
     let newT = t.split(',');
@@ -46,7 +46,6 @@ buttonsOfPages.forEach( (el,idx) =>{
         }
     });
 });
-
 
 const prepareOutPut = (maxArray,minArray) =>{
     for(let O = 0; O < maxArray.length;O++){

@@ -3,11 +3,12 @@
 var main = document.querySelector('main');
 var buttonsOfPages = document.querySelectorAll('button');
 var arr = [];
+var idx = 0;
 
 var firstOutPut = function firstOutPut() {
   main.innerHTML = '';
 
-  for (var i = 0; i <= linksMaxConcrete.length; i++) {
+  for (var i = 0; i <= linksMaxConcrete.length - 1; i++) {
     main.innerHTML += "<div>\n        <a href=\"".concat(linksMaxConcrete[i], "\" data-lightbox=\"lightbox-group-1\">\n            <div class=\"lightbox-thumbnail\" class=\"g-min\" style=\"background-image: url('").concat(linksMinConcrete[i], "'); background-repeat: no-repeat;\n            background-size: cover;\"></div>\n        </a>\n        </div>");
   }
 };
@@ -15,7 +16,7 @@ var firstOutPut = function firstOutPut() {
 var t = localStorage.getItem("cont");
 var p = localStorage.getItem("back");
 
-if (t) {
+if (t && p) {
   buttonsOfPages[p].style.backgroundColor = "rgba(172, 116, 67)";
   main.innerHTML = '';
   var newT = t.split(',');
