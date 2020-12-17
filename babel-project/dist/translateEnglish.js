@@ -27,6 +27,8 @@ if (lang) {
       document.getElementById('author').textContent = "The website was created by Micha\u0142 Pachuc";
     } else if (document.getElementById('galleryIdentifier')) {
       document.querySelector('.header').innerHTML = "Gal<span class=\"brown-end\">lery</span>";
+      document.querySelectorAll('button')[0].innerHTML = "Stairs to concrete";
+      document.querySelectorAll('button')[1].innerHTML = "Self-supporting stairs";
     } else if (document.getElementById('contactIdentifier')) {
       document.querySelector('.header').innerHTML = "Con<span class=\"brown-end\">tact</span>";
       document.querySelectorAll('.contact-info-head').forEach(function (el, idx) {
