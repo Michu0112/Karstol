@@ -269,6 +269,16 @@ a:visited{
     font-size: 1.1em;
     padding: 10px;
 }
+
+.author {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.author a {
+    color: #4287f5;
+}
+
 .footer div{
     width: 100%;
     text-align: center;
