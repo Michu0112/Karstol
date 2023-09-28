@@ -1,0 +1,19 @@
+{
+  "name": "karstol",
+  "version": "0.0.1",
+  "description": "Karstol to jednoosobowa firma stolarska z warsztatem w Brodnicy Górnej, zapraszam.",
+  "main": "index.js",
+  "authors": {
+    "name": "Michał",
+    "email": "michal.pachuc.pl@o2.pl"
+  },
+  "repository": "/karstol",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
