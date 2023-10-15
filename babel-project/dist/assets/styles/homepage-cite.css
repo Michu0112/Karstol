@@ -1,0 +1,13 @@
+.homepage_section.cite {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.homepage_section.cite h3 {
+	font-size: 100px;
+	font-weight: 600;
+	line-height: 110px;
+	width: 80%;
+    text-align: center;
+}

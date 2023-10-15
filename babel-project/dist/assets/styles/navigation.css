@@ -1,0 +1,13 @@
+.navigation {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+}
+
+.navigation a {
+	padding: 10px;
+	margin: 10px;
+	color: var(--black-900);
+	font-weight: 700;
+	text-underline-offset: 5px;
+}

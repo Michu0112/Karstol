@@ -1,0 +1,57 @@
+.homepage_section.services {
+    background-image: url('./images/homepage_services_background.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.homepage_section.services > img {
+    margin-right: 15%;
+    width: 25%;
+    height: 70%;
+}
+
+.homepage_section.services .services-wrapper {
+	width: 50%;
+    height: 70%;
+	margin: 0 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.homepage_section.services .services-wrapper h3 {
+	font-size: 48px;
+	font-weight: 600;
+    margin: 0 0 40px 0;
+}
+
+.homepage_section.services .services-wrapper p {
+	font-size: 24px;
+	font-weight: 500;
+    margin: 0;
+}
+
+.homepage_section.services .services-wrapper ul {
+	margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.homepage_section.services .services-wrapper ul li {
+    font-size: 24px;
+    font-weight: 500;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.homepage_section.services .services-list {
+	margin-top: 60px;
+}
