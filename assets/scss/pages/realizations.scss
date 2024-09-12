@@ -1,0 +1,31 @@
+.realizations {
+    &-section {
+        max-width: 1200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+
+    &-items {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px, 500px));
+    }
+
+    &-estimation {
+        max-width: 670px;
+        padding: 80px 40px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &-materials {
+        padding: 80px 40px;
+
+        & .headline {
+            font-size: 100px;
+        }
+    }
+}
