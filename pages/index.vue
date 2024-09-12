@@ -10,9 +10,9 @@
         </div>
 
         <div class="flex justify-end flex-grow mx-5">
-            <div class="w-1/2 flex justify-center items-center">
-                <div class="homepage_cta">
-                    <p class="font-primary font-medium text-xl text-justify">
+            <div class="md:w-1/2 flex justify-center items-end sm:items-center">
+                <div class="homepage_cta mb-12 sm:mb-0">
+                    <p class="font-primary font-medium text-xl md:text-justify">
                         ______Zakład stolarski Karstol zrodził się z pasji do
                         tworzenia w naturalnym materiale, jakim jest drewno.
                     </p>
@@ -26,7 +26,7 @@
 
                     <NuxtLink
                         to="/kontakt"
-                        class="font-primary mt-16 btn block"
+                        class="font-primary mt-8 md:mt-16 btn block"
                         >kontakt</NuxtLink
                     >
                 </div>
@@ -34,27 +34,29 @@
         </div>
     </div>
 
-    <div class="homepage_services h-screen flex items-center ml-10">
+    <div class="homepage_services py-20 sm:py-0 sm:h-screen flex items-center">
         <div
-            class="flex flex-col justify-between homepage_services_wrapper h-full flex-1 py-5"
+            class="flex flex-col gap-16 sm:gap-0 sm:justify-between homepage_services_wrapper h-full flex-1 py-5"
         >
-            <div class="font-primary flex flex-col gap-16">
-                <h2 class="text-5xl font-medium">Zakres usług</h2>
-                <p class="text-2xl leading-8">
+            <div class="font-primary flex flex-col gap-10 sm:gap-16">
+                <h2 class="text-3xl md:text-5xl font-medium">Zakres usług</h2>
+                <p class="md:text-2xl leading-8 text-xl">
                     ______Projekty wykonywane są z dużą starannością oraz
                     dbałością o detale. Zadowolenie klientów jest dla mnie
-                    motywatorem do pracy. W czym się specjalizuję :
+                    motywatorem do pracy.
+                    <span class="block text-nowrap mt-3">W czym się specjalizuję :</span>
                 </p>
+
                 <ul class="services_list flex flex-col gap-7">
-                    <li class="flex items-center gap-5">
-                        <img src="/icon/ok-icon.png" />
+                    <li class="flex items-center gap-2 sm:gap-5">
+                        <img src="/icon/ok-icon.png" class="ok-icon" />
                         zabudowy schodów w drewnie
                     </li>
-                    <li class="flex items-center gap-5">
-                        <img src="/icon/ok-icon.png" /> zabudowy poręczy
+                    <li class="flex items-center gap-2 sm:gap-5">
+                        <img src="/icon/ok-icon.png" class="ok-icon" /> zabudowy poręczy
                     </li>
-                    <li class="flex items-center gap-5">
-                        <img src="/icon/ok-icon.png" /> zabudowy mebli
+                    <li class="flex items-center gap-2 sm:gap-5">
+                        <img src="/icon/ok-icon.png" class="ok-icon" /> zabudowy mebli
                     </li>
                 </ul>
             </div>
@@ -66,15 +68,18 @@
             </NuxtLink>
         </div>
         <div
-            class="flex-1 flex items-center justify-center bg-contain h-full bg-right bg-no-repeat"
+            class="decoration-section flex-1 flex items-center justify-center bg-contain h-full bg-right bg-no-repeat"
             style="background-image: url('/logs-bg.png')"
         >
-            <img src="/stairs.png" />
+            <img
+                src="/stairs.png"
+                class="image"
+            />
         </div>
     </div>
 
     <div
-        class="homepage_generations h-screen bg-cover bg-no-repeat bg-center"
+        class="homepage_generations lg:h-screen bg-cover bg-no-repeat bg-center"
         style="background-image: url('/generations.png')"
     >
         <div class="banner">
@@ -85,14 +90,14 @@
     </div>
 
     <div
-        class="homepage_beginning h-screen bg-no-repeat bg-center flex items-center mx-10 gap-16"
+        class="homepage_beginning lg:h-screen bg-no-repeat bg-center flex items-center px-10 gap-10 md:gap-16"
     >
-        <div class="flex flex-col flex-1 justify-between h-full py-20">
+        <div class="content-section flex flex-col flex-1 justify-between lg:h-full py-20 gap-10 lg:gap-0">
             <div>
-                <h2 class="text-5xl font-medium font-primary">
+                <h2 class="text-3xl md:text-5xl font-medium font-primary">
                     Jak zaczynaliśmy
                 </h2>
-                <p class="text-2xl mt-10 leading-8 font-primary">
+                <p class="text-xl md:text-2xl mt-10 leading-8 font-primary">
                     ______Firmę stolarską założył mój dziadek w latach 80- tych
                     na Kaszubach. Powoli wchodził w rynek, dzięki swojej
                     ogromnej pracowitości oraz zapałowi do pracy. Następnie
@@ -108,16 +113,18 @@
                 >kontakt</NuxtLink
             >
         </div>
-        <div class="flex-1 h-full py-20">
+        <div class="decoration-section flex-1 h-full md:py-20 flex justify-center">
             <img
                 src="/filler-field.png"
-                class="object-cover h-full w-full"
+                class="h-auto"
             />
         </div>
     </div>
 
-    <div class="homepage_contact m-10 mt-20 text-base font-primary flex flex-col items-center">
-        <h2 class="text-center text-4xl font-semibold">Kontakt:</h2>
+    <div
+        class="homepage_contact m-10 sm:mt-20 text-base font-primary flex flex-col items-center"
+    >
+        <h2 class="text-center text-3xl sm:text-4xl font-semibold">Kontakt:</h2>
         <div
             class="contact_box flex items-center justify-between py-5 px-10 font-medium"
         >
@@ -159,8 +166,16 @@
             </div>
             <div class="leading-8">
                 <p>Karol Recław</p>
-                <p>Brodnica Górna 83-324</p>
-                <p>ul.Kamienna 3</p>
+                <a
+                    href="https://maps.app.goo.gl/JqnxSUjdPTb1RoAt9"
+                    class="block"
+                    >Brodnica Górna 83-324</a
+                >
+                <a
+                    href="https://maps.app.goo.gl/JqnxSUjdPTb1RoAt9"
+                    class="block"
+                    >ul.Kamienna 3</a
+                >
             </div>
         </div>
     </div>

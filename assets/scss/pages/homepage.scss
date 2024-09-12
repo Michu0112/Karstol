@@ -1,7 +1,12 @@
 .homepage {
+    &_welcome {
+        @include mq('sm', 'max') {
+           
+        }
+    }
+
     &_banner {
         background-color: $yellow;
-
         width: 75%;
         display: flex;
         flex-direction: column;
@@ -15,6 +20,15 @@
         &:first-of-type {
             line-height: 80px;
         }
+
+        @include mq('md', 'max') {
+            font-size: 60px;
+            line-height: normal !important;
+        }
+
+        @include mq('sm', 'max') {
+            font-size: 40px;
+        }
     }
 
     &_cta {
@@ -23,13 +37,82 @@
     }
 
     &_services {
+        position: relative;
+        margin-left: 40px;
+
         &_wrapper {
             max-height: 760px;
+            margin-right: 20px;
+            z-index: 1;
         }
 
         & .services_list {
             font-size: 24px;
 
+            @include mq('md', 'max') {
+                font-size: 20px;
+            }
+
+            & .ok-icon {
+                @include mq('sm', 'max') {
+                    width: 30px;
+                }
+            }
+        }
+
+        & .image {
+            @include mq('lg', 'max') {
+                width: 70%;
+            }
+            @include mq('md', 'max') {
+                display: none;
+            }
+        }
+
+        & .decoration-section {
+            z-index: 0;
+
+            @include mq('md', 'max') {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0.3;
+                background-size: cover;
+            }
+        }
+
+        @include mq('md', 'max') {
+            margin: 0;
+            padding-left: 20px;
+        }
+    }
+
+    &_beginning {
+        position: relative;
+
+        & .content-section {
+            z-index: 1;
+        }
+
+        & .decoration-section {
+            & img {
+                @include mq('md', 'max') {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            @include mq('md', 'max') {
+                position: absolute;
+                height: 100%;
+                left: 0;
+                top: 0;
+                width: 100%;
+                z-index: 0;
+                opacity: 0.5;
+            }
         }
     }
 
@@ -48,7 +131,29 @@
 
             & * {
                 line-height: 90px;
+
+                @include mq('lg', 'max') {
+                    line-height: normal;
+                }
             }
+
+            @include mq('lg', 'max') {
+                font-size: 60px;
+            }
+
+            @include mq('md', 'max') {
+                font-size: 40px;
+                top: 60%;
+            }
+
+            @include mq('sm', 'max') {
+                left: 30%;
+                width: 70%;
+            }
+        }
+
+        @include mq('lg', 'max') {
+            height: 500px;
         }
     }
 
@@ -60,6 +165,16 @@
             max-width: 1200px;
             background-color: $yellow;
             width: 100%;
+
+            @include mq('md', 'max') {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+
+                & a {
+                    justify-content: center;
+                }
+            }
         }
     }
 }

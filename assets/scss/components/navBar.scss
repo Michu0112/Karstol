@@ -1,6 +1,7 @@
 .nav-bar {
     &-item {
         position: relative;
+        font-size: 24px;
 
         &::after {
             content: '';
@@ -9,6 +10,15 @@
             height: 1px;
             width: 100%;
             margin-top: 5px;
+        }
+
+        @include mq('md', 'max') {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        @include mq('sm', 'max') {
+            font-size: 18px;
         }
     }
 }
