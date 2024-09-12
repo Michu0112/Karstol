@@ -1,0 +1,65 @@
+.homepage {
+    &_banner {
+        background-color: $yellow;
+
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &_headline {
+        font-size: 100px;
+        font-weight: 500;
+        line-height: 110px;
+
+        &:first-of-type {
+            line-height: 80px;
+        }
+    }
+
+    &_cta {
+        max-width: 670px;
+        width: 100%;
+    }
+
+    &_services {
+        &_wrapper {
+            max-height: 760px;
+        }
+
+        & .services_list {
+            font-size: 24px;
+
+        }
+    }
+
+    &_generations {
+        position: relative;
+
+        & .banner {
+            background-color: $yellow;
+            font-family: 'Montserrat';
+            font-size: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 50%;
+            font-weight: 500;
+
+            & * {
+                line-height: 90px;
+            }
+        }
+    }
+
+    &_contact {
+        margin: 80 40px 40px 40px;
+
+        & .contact_box {
+            margin: 40px;
+            max-width: 1200px;
+            background-color: $yellow;
+            width: 100%;
+        }
+    }
+}
