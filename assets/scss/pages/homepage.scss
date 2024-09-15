@@ -4,33 +4,7 @@
            
         }
     }
-
-    &_banner {
-        background-color: $yellow;
-        width: 75%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    &_headline {
-        font-size: 100px;
-        font-weight: 500;
-        line-height: 110px;
-
-        &:first-of-type {
-            line-height: 80px;
-        }
-
-        @include mq('md', 'max') {
-            font-size: 60px;
-            line-height: normal !important;
-        }
-
-        @include mq('sm', 'max') {
-            font-size: 40px;
-        }
-    }
-
+    
     &_cta {
         max-width: 670px;
         width: 100%;
@@ -154,27 +128,6 @@
 
         @include mq('lg', 'max') {
             height: 500px;
-        }
-    }
-
-    &_contact {
-        margin: 80 40px 40px 40px;
-
-        & .contact_box {
-            margin: 40px;
-            max-width: 1200px;
-            background-color: $yellow;
-            width: 100%;
-
-            @include mq('md', 'max') {
-                flex-direction: column;
-                gap: 20px;
-                text-align: center;
-
-                & a {
-                    justify-content: center;
-                }
-            }
         }
     }
 }

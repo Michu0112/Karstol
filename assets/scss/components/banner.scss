@@ -1,0 +1,23 @@
+.banner {
+    background-color: $yellow;
+    display: flex;
+
+    &_headline {
+        font-size: 100px;
+        font-weight: 500;
+        line-height: 110px;
+
+        &:first-of-type {
+            line-height: 80px;
+        }
+
+        @include mq('md', 'max') {
+            font-size: 60px;
+            line-height: normal !important;
+        }
+
+        @include mq('sm', 'max') {
+            font-size: 40px;
+        }
+    }
+}

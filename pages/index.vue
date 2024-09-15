@@ -4,9 +4,9 @@
         class="h-screen bg-cover bg-center homepage_welcome flex flex-col"
     >
         <NavBar />
-        <div class="homepage_banner font-primary">
-            <p class="homepage_headline">karstol</p>
-            <p class="homepage_headline">twój stolarz</p>
+        <div class="banner font-primary flex-col w-3/4">
+            <p class="banner_headline">karstol</p>
+            <p class="banner_headline">twój stolarz</p>
         </div>
 
         <div class="flex justify-end flex-grow mx-5">
@@ -82,7 +82,7 @@
         class="homepage_generations lg:h-screen bg-cover bg-no-repeat bg-center"
         style="background-image: url('/generations.png')"
     >
-        <div class="banner">
+        <div class="banner flex-col">
             <p>Firma</p>
             <p>z tradycją</p>
             <p>od pokoleń</p>

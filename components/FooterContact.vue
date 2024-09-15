@@ -1,6 +1,6 @@
 <template>
     <div
-        class="homepage_contact m-10 sm:mt-20 text-base font-primary flex flex-col items-center"
+        class="contact m-5 sm:mt-20 text-base font-primary flex flex-col items-center"
     >
         <h2 class="text-center text-3xl sm:text-4xl font-semibold">Kontakt:</h2>
         <div
@@ -45,12 +45,12 @@
             <div class="leading-8">
                 <p>Karol Recław</p>
                 <a
-                    href="https://maps.app.goo.gl/JqnxSUjdPTb1RoAt9"
+                    href="https://g.co/kgs/pFrFovr"
                     class="block"
                     >Brodnica Górna 83-324</a
                 >
                 <a
-                    href="https://maps.app.goo.gl/JqnxSUjdPTb1RoAt9"
+                    href="https://g.co/kgs/pFrFovr"
                     class="block"
                     >ul.Kamienna 3</a
                 >

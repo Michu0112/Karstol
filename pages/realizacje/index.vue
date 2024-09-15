@@ -2,28 +2,28 @@
     <NavBar />
 
     <div class="realizations">
-        <h2 class="text-5xl font-primary text-center font-medium mt-16">
+        <h2 class="text-3xl md:text-5xl font-primary text-center font-medium mt-16">
             Realizacje
         </h2>
 
         <div class="realizations-section">
-            <h3 class="sub-header text-3xl font-primary mt-24">
+            <h3 class="sub-header text-xl md:text-3xl font-primary mt-12 md:mt-24 text-center">
                 Różnorodne i dopasowane do wizji klientów
             </h3>
 
-            <div class="realizations-items gap-20 mt-20">
-                <div v-for="index in 6">
-                    <img :src="'/images/' + index + '.png'" />
+            <div class="realizations-items gap-10 md:gap-20 mt-10 md:mt-20">
+                <div v-for="image in showOffImages">
+                    <img :src="'/images/showOffImages/' + image" lazy="true"/>
                 </div>
             </div>
         </div>
 
         <div class="realizations-estimation flex flex-col gap-20 items-center">
-            <h3 class="text-3xl font-primary font-medium">
+            <h3 class="text-3xl font-primary font-medium text-center">
                 Podobają Ci się realizacje ?
             </h3>
             <NuxtLink
-                to="/wycen-projekt"
+                to="/kontakt"
                 class="btn"
                 >poproś o wycenę</NuxtLink
             >
@@ -37,30 +37,42 @@
             <div class="flex flex-col items-center mt-20 gap-16">
                 <p class="text-3xl font-medium font-primary">Rodzaje drewna</p>
                 <div class="flex flex-col items-center gap-5">
-                    <p class="text-lg font-primary font-medium">
+                    <p class="text-base sm:text-lg font-primary font-medium text-center sm:text-left">
                         Pracuję na sprawdzonych gatunkach drewna
                     </p>
-                    <p class="font-primary">
+                    <p class="text-sm sm:text-base font-primary leading-7">
                         *poniższe zdjęcia pokazujące strukturę drzewa są
                         orientacyjne
                     </p>
                 </div>
 
-                <div class="flex items-center gap-20">
+                <div class="flex items-center gap-10 md:gap-20 flex-col md:flex-row">
                     <div class="flex flex-col items-center gap-10">
-                        <img src="/woods/jesion.png" width="70%" />
+                        <img
+                            src="/woods/jesion.png"
+                            width="70%"
+                        />
                         <p class="text-3xl font-primary font-medium">jesion</p>
                     </div>
                     <div class="flex flex-col items-center gap-10">
-                        <img src="/woods/dab.png" width="70%" />
+                        <img
+                            src="/woods/dab.png"
+                            width="70%"
+                        />
                         <p class="text-3xl font-primary font-medium">dąb</p>
                     </div>
                     <div class="flex flex-col items-center gap-10">
-                        <img src="/woods/buk.png" width="70%" />
+                        <img
+                            src="/woods/buk.png"
+                            width="70%"
+                        />
                         <p class="text-3xl font-primary font-medium">buk</p>
                     </div>
                     <div class="flex flex-col items-center gap-10">
-                        <img src="/woods/sosna.png" width="70%" />
+                        <img
+                            src="/woods/sosna.png"
+                            width="70%"
+                        />
                         <p class="text-3xl font-primary font-medium">sosna</p>
                     </div>
                 </div>
@@ -70,3 +82,28 @@
 
     <FooterContact />
 </template>
+
+<script setup>
+import { computed } from 'vue'
+
+const showOffImages = computed(() => [
+    '20220614_192500.jpg',
+    '20220615_153345.jpg',
+    '20220714_203149.jpg',
+    '20230223_190506.jpg',
+    '20230223_190510.jpg',
+    '20230223_190520.jpg',
+    '20230223_190544.jpg',
+    '20230523_180519.jpg',
+    '20230619_180531.jpg',
+    '20231130_192408.jpg',
+    '20231130_192413.jpg',
+    '20231130_194153.jpg',
+    '20231204_200245.jpg',
+    '20240701_153355.jpg',
+    '20240701_153406.jpg',
+    '20240701_153432.jpg',
+    '20240712_202623.jpg',
+    '20240712_202653.jpg',
+])
+</script>

@@ -1,0 +1,22 @@
+a {
+    position: relative;
+    z-index: 1;
+
+    &.highlight {
+        @include mq('md', 'min') {
+            &::before {
+                position: absolute;
+                z-index: -1;
+                background-color: $yellow;
+                height: 100%;
+                width: 0;
+                content: '';
+                transition: width 0.2s;
+            }
+
+            &:hover::before {
+                width: 100%;
+            }
+        }
+    }
+}

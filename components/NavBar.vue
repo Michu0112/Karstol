@@ -1,21 +1,23 @@
 <template>
     <div class="flex justify-between items-center" :class="{
-        'justify-end': isHomePage
+        'justify-end': isCurrentPage('index')
     }">
         <NuxtLink
-            v-if="!isHomePage"
+            v-if="!isCurrentPage('index')"
             to="/"
             class="px-5 py-6 color-primary font-primary nav-bar-item"
             >powrót</NuxtLink
         >
         <div class="flex justify-end items-center nav-bar gap-3 w-full">
             <NuxtLink
+                v-if="!isCurrentPage('realizacje')"
                 to="/realizacje"
                 class="px-5 py-6 color-primary font-primary nav-bar-item"
                 >realizacje</NuxtLink
             >
             <NuxtLink
-                to="/wycen-projekt"
+                v-if="!isCurrentPage('kontakt')"
+                to="/kontakt"
                 class="px-5 py-6 color-primary font-primary nav-bar-item"
                 >wyceń projekt</NuxtLink
             >
@@ -24,8 +26,6 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
-
 const route = useRoute()
-const isHomePage = computed(() => route.name === 'index')
+const isCurrentPage = (routeName) => route.name === routeName
 </script>

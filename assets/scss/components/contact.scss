@@ -1,0 +1,20 @@
+.contact {
+    margin: 80 40px 40px 40px;
+
+    & .contact_box {
+        margin: 40px;
+        max-width: 1200px;
+        background-color: $yellow;
+        width: 100%;
+
+        @include mq('md', 'max') {
+            flex-direction: column;
+            gap: 20px;
+            text-align: center;
+
+            & a {
+                justify-content: center;
+            }
+        }
+    }
+}

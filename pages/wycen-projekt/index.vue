@@ -1,1 +1,0 @@
-<template>Wyceń projekt</template>
