@@ -1,10 +1,10 @@
 <template>
     <div
         style="background-image: url('/homepage-bg.png')"
-        class="h-screen bg-cover homepage_welcome flex flex-col"
+        class="h-svh bg-cover homepage_welcome flex flex-col"
     >
         <NavBar />
-        <div class="banner font-primary flex-col w-3/4">
+        <div class="banner mt-20 md:mt-0 font-primary flex-col w-3/4 pl-5">
             <p class="banner_headline">karstol</p>
             <p class="banner_headline">twój stolarz</p>
         </div>
@@ -12,16 +12,18 @@
         <div class="flex justify-end flex-grow mx-5">
             <div class="md:w-1/2 flex justify-center items-end sm:items-center">
                 <div class="homepage_cta mb-12 sm:mb-0">
-                    <p class="font-primary font-medium text-xl md:text-justify">
+                    <p
+                        class="font-primary hidden sm:block font-medium text-xl md:text-justify"
+                    >
                         ______Zakład stolarski Karstol zrodził się z pasji do
                         tworzenia w naturalnym materiale, jakim jest drewno.
                     </p>
                     <span
                         class="font-primary font-medium mt-5 block text-justify leading-7"
                         >Jesteśmy małą rodzinną manufakturą, tworzącą głównie
-                        drewniane schody do domów jednorodzinnych. Nasze
-                        realizacje wykonujemy na terenie całej Polski.Zapraszam
-                        do zapoznania się z naszymi realizacjami.
+                        drewniane schody. Nasze realizacje wykonujemy na terenie
+                        całej Polski. Zapraszam do zapoznania się z naszymi
+                        realizacjami.
                     </span>
 
                     <NuxtLink
@@ -156,12 +158,16 @@
         id="about"
         class="mx-5 md:mx-10 my-10 md:my-20 pt-5"
     >
-        <h2 class="font-primary text-3xl md:text-5xl font-medium underscore w-fit">
+        <h2
+            class="font-primary text-3xl md:text-5xl font-medium underscore w-fit"
+        >
             Co mnie wyróżnia?
         </h2>
 
         <div class="flex flex-col gap-10 md:gap-20 my-10 md:my-20">
-            <div class="flex md:px-0 xl:px-32 gap-20 items-center flex-col-reverse md:flex-row">
+            <div
+                class="flex md:px-0 xl:px-32 gap-20 items-center flex-col-reverse md:flex-row"
+            >
                 <div class="text-box">
                     <h3 class="font-primary text-2xl font-medium mb-10">
                         Profesjonalizm
@@ -179,11 +185,13 @@
                     </p>
                 </div>
                 <div class="hl-right highlight flex-1 w-4/5 sm:w-3/4 md:w-full">
-                    <img src="/profesjonalizm.jpg"/>
+                    <img src="/profesjonalizm.jpg" />
                 </div>
             </div>
 
-            <div class="flex md:px-0 xl:px-32 gap-20 items-center flex-col md:flex-row">
+            <div
+                class="flex md:px-0 xl:px-32 gap-20 items-center flex-col md:flex-row"
+            >
                 <div class="hl-left highlight flex-1 w-4/5 sm:w-3/4 md:w-full">
                     <img src="/indywidualne-podejście.jpg" />
                 </div>
@@ -204,7 +212,9 @@
                 </div>
             </div>
 
-            <div class="flex md:px-0 xl:px-32 gap-20 items-center flex-col-reverse md:flex-row">
+            <div
+                class="flex md:px-0 xl:px-32 gap-20 items-center flex-col-reverse md:flex-row"
+            >
                 <div class="text-box">
                     <h3 class="font-primary text-2xl font-medium mb-10">
                         Precyzja wykonania
@@ -219,7 +229,7 @@
                         oczekiwania i będzie służył przez wiele lat.
                     </p>
                 </div>
-                <div class="hl-right highlight flex-1 w-4/5  sm:w-3/4 md:w-full">
+                <div class="hl-right highlight flex-1 w-4/5 sm:w-3/4 md:w-full">
                     <img src="/indywidualne-podejscie.jpg" />
                 </div>
             </div>
@@ -230,7 +240,9 @@
         id="process"
         class="homepage_process mx-5 md:mx-10 my-16 md:my-32 pt-5"
     >
-        <h2 class="font-primary text-3xl md:text-5xl font-medium underscore w-fit">
+        <h2
+            class="font-primary text-3xl md:text-5xl font-medium underscore w-fit"
+        >
             Proces współpracy
         </h2>
         <p class="font-primary text-xl mt-10 leading-8">
@@ -241,7 +253,9 @@
         <div
             class="items-center steps md:mx-auto my-10 md:my-20 flex justify-center gap-10 xl:gap-20 flex-col lg:flex-row"
         >
-            <div class="highlight hl-left md:flex-1 lg:flex-initial w-4/5 md:w-3/4 lg:w-full md:px-0">
+            <div
+                class="highlight hl-left md:flex-1 lg:flex-initial w-4/5 md:w-3/4 lg:w-full md:px-0"
+            >
                 <img src="/proces.jpg" />
             </div>
             <ul class="list text-lg md:flex-1 lg:flex-initial">
@@ -266,6 +280,41 @@
                     pełne zadowolenie z gotowego produktu.
                 </li>
             </ul>
+        </div>
+    </div>
+
+    <div
+        id="news"
+        class="w-full flex flex-col justify-center px-5 pt-5 md:px-10"
+    >
+        <h2
+            class="font-primary text-3xl md:text-5xl font-medium underscore w-fit"
+        >
+            Aktualności
+        </h2>
+
+        <div
+            class="fb-page justify-center my-10 md:my-20"
+            data-href="https://www.facebook.com/p/Us%C5%82ugi-Stolarskie-Brodnica-G%C3%B3rna-100042681206354/?paipv=0&amp;eav=AfbISkT1FqcJkI_NK_vTQ2-K_h5jwlneZJEQAab7AM4-TtBkMnMJ5dELlHm9eMvc3fM&amp;_rdr"
+            data-show-posts="true"
+            data-width="1000"
+            data-height="600"
+            data-hide-cta="true"
+            data-small-header="false"
+            data-adapt-container-width="true"
+            data-hide-cover="false"
+            data-show-facepile="false"
+            style="display: flex !important"
+        >
+            <blockquote
+                cite="https://www.facebook.com/p/Us%C5%82ugi-Stolarskie-Brodnica-G%C3%B3rna-100042681206354/?paipv=0&amp;eav=AfbISkT1FqcJkI_NK_vTQ2-K_h5jwlneZJEQAab7AM4-TtBkMnMJ5dELlHm9eMvc3fM&amp;_rdr"
+                class="fb-xfbml-parse-ignore"
+            >
+                <a
+                    href="https://www.facebook.com/p/Us%C5%82ugi-Stolarskie-Brodnica-G%C3%B3rna-100042681206354/?paipv=0&amp;eav=AfbISkT1FqcJkI_NK_vTQ2-K_h5jwlneZJEQAab7AM4-TtBkMnMJ5dELlHm9eMvc3fM&amp;_rdr"
+                    >Usługi Stolarskie Brodnica Górna</a
+                >
+            </blockquote>
         </div>
     </div>
 

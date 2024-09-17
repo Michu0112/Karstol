@@ -3,7 +3,7 @@
         <!--         <div class="banner justify-end flex flex-row w-3/5">
             <p class="banner_headline font-primary w-fit p-4">Kontakt</p>
         </div> -->
-        <div class="flex items-center h-full gap-14 lg:gap-28 relative">
+        <div class="flex items-center h-dvh gap-14 lg:gap-28 relative">
             <img
                 src="/contact-bg.png"
                 class="w-full md:w-2/5 fixed md:relative h-full object-cover -z-10 md:z-0 opacity-30 md:opacity-100"
@@ -16,7 +16,7 @@
                     <p class="headline p-5 text-3xl md:text-6xl font-primary font-semibold">kontakt</p>
                 </div>
 
-                <p class="font-primary text-xl leading-7 font-semibold mt-10 mb-10 md:mb-20 px-5">
+                <p class="font-primary text-xl leading-7 font-semibold mt-10 mb-10 md:mb-20 px-5 whitespace-break-spaces">
                     ______Potrzebujesz schodów dopasowanych do Twojego wnętrza ?
                     <span class="block leading-7 mt-5">
                         Zapraszam do kontaktu telefonicznego. Oferuję darmowy

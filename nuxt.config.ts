@@ -1,5 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    devServer: {
+        host: '0.0.0.0',
+    },
     compatibilityDate: '2024-04-03',
     devtools: { enabled: true },
     css: ['~/assets/scss/main.scss'],
@@ -8,7 +11,8 @@ export default defineNuxtConfig({
         css: {
             preprocessorOptions: {
                 scss: {
-                    additionalData: '@import "@/assets/scss/variables.scss";@import "@/assets/scss/mixins/breakpoints.scss";',
+                    additionalData:
+                        '@import "@/assets/scss/variables.scss";@import "@/assets/scss/mixins/breakpoints.scss";',
                 },
             },
         },

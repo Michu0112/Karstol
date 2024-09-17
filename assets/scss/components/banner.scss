@@ -18,6 +18,7 @@
 
         @include mq('sm', 'max') {
             font-size: 40px;
+            font-weight: 600;
         }
     }
 }

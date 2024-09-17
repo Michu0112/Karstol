@@ -1,6 +1,7 @@
 .homepage {
     &_welcome {
         @include mq('sm', 'max') {
+            background-position: top;
         }
     }
 
@@ -141,7 +142,11 @@
                 width: fit-content;
 
                 & li {
-                    padding: 10px 0;
+                    padding: 20px 0;
+
+                    @include mq('md', 'max') {
+                        text-align: justify;
+                    }
                 }
 
                 @include mq('md', 'max') {
