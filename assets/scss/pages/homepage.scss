@@ -1,10 +1,9 @@
 .homepage {
     &_welcome {
         @include mq('sm', 'max') {
-           
         }
     }
-    
+
     &_cta {
         max-width: 670px;
         width: 100%;
@@ -129,5 +128,33 @@
         @include mq('lg', 'max') {
             height: 500px;
         }
+    }
+
+    &_process {
+        & .steps {
+            max-width: 1200px;
+            width: 100%;
+
+            & .list {
+                font-family: 'Montserrat';
+                padding-left: 20px;
+                width: fit-content;
+
+                & li {
+                    padding: 10px 0;
+                }
+
+                @include mq('md', 'max') {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+.text-box {
+    flex: 2;
+
+    @include mq('xl', 'max') {
+        flex: 1;
     }
 }

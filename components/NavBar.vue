@@ -1,7 +1,10 @@
 <template>
-    <div class="flex justify-between items-center" :class="{
-        'justify-end': isCurrentPage('index')
-    }">
+    <div
+        class="flex justify-between items-center"
+        :class="{
+            'justify-end': isCurrentPage('index'),
+        }"
+    >
         <NuxtLink
             v-if="!isCurrentPage('index')"
             to="/"
@@ -9,6 +12,21 @@
             >powrót</NuxtLink
         >
         <div class="flex justify-end items-center nav-bar gap-3 w-full">
+            <NuxtLink
+                to="/#services"
+                class="px-5 py-6 color-primary font-primary nav-bar-item"
+                >usługi</NuxtLink
+            >
+            <NuxtLink
+                to="/#about"
+                class="px-5 py-6 color-primary font-primary nav-bar-item"
+                >o mnie</NuxtLink
+            >
+            <NuxtLink
+                to="/#process"
+                class="px-5 py-6 color-primary font-primary nav-bar-item"
+                >proces</NuxtLink
+            >
             <NuxtLink
                 v-if="!isCurrentPage('realizacje')"
                 to="/realizacje"

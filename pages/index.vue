@@ -1,7 +1,7 @@
 <template>
     <div
         style="background-image: url('/homepage-bg.png')"
-        class="h-screen bg-cover bg-center homepage_welcome flex flex-col"
+        class="h-screen bg-cover homepage_welcome flex flex-col"
     >
         <NavBar />
         <div class="banner font-primary flex-col w-3/4">
@@ -34,29 +34,54 @@
         </div>
     </div>
 
-    <div class="homepage_services py-20 sm:py-0 sm:h-screen flex items-center">
+    <div
+        id="services"
+        class="homepage_services py-20 sm:py-0 sm:h-screen flex items-center"
+    >
         <div
             class="flex flex-col gap-16 sm:gap-0 sm:justify-between homepage_services_wrapper h-full flex-1 py-5"
         >
             <div class="font-primary flex flex-col gap-10 sm:gap-16">
-                <h2 class="text-3xl md:text-5xl font-medium">Zakres usług</h2>
+                <h2 class="text-3xl md:text-5xl font-medium underscore w-fit">
+                    Zakres usług
+                </h2>
                 <p class="md:text-2xl leading-8 text-xl">
                     ______Projekty wykonywane są z dużą starannością oraz
                     dbałością o detale. Zadowolenie klientów jest dla mnie
                     motywatorem do pracy.
-                    <span class="block text-nowrap mt-3">W czym się specjalizuję :</span>
+                    <span class="block text-nowrap mt-3"
+                        >W czym się specjalizuję :</span
+                    >
                 </p>
 
                 <ul class="services_list flex flex-col gap-7">
                     <li class="flex items-center gap-2 sm:gap-5">
-                        <img src="/icon/ok-icon.png" class="ok-icon" />
-                        zabudowy schodów w drewnie
+                        <img
+                            src="/icon/ok-icon.png"
+                            class="ok-icon"
+                        />
+                        schody drewniane
                     </li>
                     <li class="flex items-center gap-2 sm:gap-5">
-                        <img src="/icon/ok-icon.png" class="ok-icon" /> zabudowy poręczy
+                        <img
+                            src="/icon/ok-icon.png"
+                            class="ok-icon"
+                        />
+                        schody na beton
                     </li>
                     <li class="flex items-center gap-2 sm:gap-5">
-                        <img src="/icon/ok-icon.png" class="ok-icon" /> zabudowy mebli
+                        <img
+                            src="/icon/ok-icon.png"
+                            class="ok-icon"
+                        />
+                        zabudowy
+                    </li>
+                    <li class="flex items-center gap-2 sm:gap-5">
+                        <img
+                            src="/icon/ok-icon.png"
+                            class="ok-icon"
+                        />
+                        schody kręte
                     </li>
                 </ul>
             </div>
@@ -92,9 +117,13 @@
     <div
         class="homepage_beginning lg:h-screen bg-no-repeat bg-center flex items-center px-10 gap-10 md:gap-16"
     >
-        <div class="content-section flex flex-col flex-1 justify-between lg:h-full py-20 gap-10 lg:gap-0">
+        <div
+            class="content-section flex flex-col flex-1 justify-between lg:h-full py-20 gap-10 lg:gap-0"
+        >
             <div>
-                <h2 class="text-3xl md:text-5xl font-medium font-primary">
+                <h2
+                    class="text-3xl md:text-5xl font-medium font-primary underscore w-fit"
+                >
                     Jak zaczynaliśmy
                 </h2>
                 <p class="text-xl md:text-2xl mt-10 leading-8 font-primary">
@@ -113,11 +142,130 @@
                 >kontakt</NuxtLink
             >
         </div>
-        <div class="decoration-section flex-1 h-full md:py-20 flex justify-center">
+        <div
+            class="decoration-section flex-1 h-full md:py-20 flex justify-center"
+        >
             <img
                 src="/filler-field.png"
                 class="h-auto"
             />
+        </div>
+    </div>
+
+    <div
+        id="about"
+        class="mx-5 md:mx-10 my-10 md:my-20 pt-5"
+    >
+        <h2 class="font-primary text-3xl md:text-5xl font-medium underscore w-fit">
+            Co mnie wyróżnia?
+        </h2>
+
+        <div class="flex flex-col gap-10 md:gap-20 my-10 md:my-20">
+            <div class="flex md:px-0 xl:px-32 gap-20 items-center flex-col-reverse md:flex-row">
+                <div class="text-box">
+                    <h3 class="font-primary text-2xl font-medium mb-10">
+                        Profesjonalizm
+                    </h3>
+                    <p class="font-primary text-xl leading-8">
+                        Jako właściciel firmy Karstol dbam o najwyższą jakość i
+                        precyzję w każdym detalu. Każde schody, które tworzę, są
+                        w pełni spersonalizowane i wykonane na indywidualne
+                        zamówienie, zgodnie z wymiarami i potrzebami klienta.
+                        Dzięki mojemu doświadczeniu i pasji do rzemiosła,
+                        oferuję produkty, które spełniają najwyższe standardy
+                        techniczne i estetyczne. Na każdym etapie – od pomiarów,
+                        przez projekt, aż po montaż – gwarantuję pełen
+                        profesjonalizm i zaangażowanie.
+                    </p>
+                </div>
+                <div class="hl-right highlight flex-1 w-4/5 sm:w-3/4 md:w-full">
+                    <img src="/profesjonalizm.jpg"/>
+                </div>
+            </div>
+
+            <div class="flex md:px-0 xl:px-32 gap-20 items-center flex-col md:flex-row">
+                <div class="hl-left highlight flex-1 w-4/5 sm:w-3/4 md:w-full">
+                    <img src="/indywidualne-podejście.jpg" />
+                </div>
+                <div class="text-box">
+                    <h3 class="font-primary text-2xl font-medium mb-10">
+                        Indywidualne podejście
+                    </h3>
+                    <p class="font-primary text-xl leading-8">
+                        Każdy projekt schodów jest dla mnie unikalny. W firmie
+                        Karstol przykładam dużą wagę do indywidualnych potrzeb
+                        klienta, tworząc rozwiązania idealnie dopasowane do
+                        specyfiki wnętrza oraz osobistych preferencji. Staram
+                        się, aby każdy etap współpracy – od pierwszej rozmowy po
+                        finalny montaż – odzwierciedlał Twoje oczekiwania,
+                        tworząc schody, które są nie tylko funkcjonalne, ale
+                        również wyjątkowe.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex md:px-0 xl:px-32 gap-20 items-center flex-col-reverse md:flex-row">
+                <div class="text-box">
+                    <h3 class="font-primary text-2xl font-medium mb-10">
+                        Precyzja wykonania
+                    </h3>
+                    <p class="font-primary text-xl leading-8">
+                        W firmie Karstol każdy detal ma znaczenie. Dbam o to,
+                        aby każdy element schodów był starannie wykonany,
+                        zgodnie z najwyższymi standardami. Precyzja to nie tylko
+                        kwestia estetyki, ale także trwałości i bezpieczeństwa.
+                        Dzięki mojemu zaangażowaniu i doświadczeniu mogę
+                        zagwarantować, że końcowy produkt spełni Twoje
+                        oczekiwania i będzie służył przez wiele lat.
+                    </p>
+                </div>
+                <div class="hl-right highlight flex-1 w-4/5  sm:w-3/4 md:w-full">
+                    <img src="/indywidualne-podejscie.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div
+        id="process"
+        class="homepage_process mx-5 md:mx-10 my-16 md:my-32 pt-5"
+    >
+        <h2 class="font-primary text-3xl md:text-5xl font-medium underscore w-fit">
+            Proces współpracy
+        </h2>
+        <p class="font-primary text-xl mt-10 leading-8">
+            Stawiam na jasną i przejrzystą komunikację na każdym etapie
+            realizacji.
+        </p>
+
+        <div
+            class="items-center steps md:mx-auto my-10 md:my-20 flex justify-center gap-10 xl:gap-20 flex-col lg:flex-row"
+        >
+            <div class="highlight hl-left md:flex-1 lg:flex-initial w-4/5 md:w-3/4 lg:w-full md:px-0">
+                <img src="/proces.jpg" />
+            </div>
+            <ul class="list text-lg md:flex-1 lg:flex-initial">
+                <li>
+                    <span class="font-semibold text-2xl leading-8">01.</span>
+                    Rozpoczynamy od omówienia Twoich potrzeb i preferencji.
+                    Wspólnie ustalimy, jak powinny wyglądać Twoje schody.
+                </li>
+                <li>
+                    <span class="font-semibold text-2xl leading-8">02.</span>
+                    Dokonuję dokładnych pomiarów i przygotowuję projekt, który
+                    będzie dopasowany do Twojego wnętrza.
+                </li>
+                <li>
+                    <span class="font-semibold text-2xl leading-8">03.</span> Po
+                    zaakceptowaniu projektu przystępuję do produkcji schodów,
+                    dbając o najwyższą jakość wykonania.
+                </li>
+                <li>
+                    <span class="font-semibold text-2xl leading-8">04.</span>
+                    Zajmuję się montażem schodów, zapewniając terminowość i
+                    pełne zadowolenie z gotowego produktu.
+                </li>
+            </ul>
         </div>
     </div>
 

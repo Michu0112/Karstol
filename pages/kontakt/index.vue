@@ -6,7 +6,7 @@
         <div class="flex items-center h-full gap-14 lg:gap-28 relative">
             <img
                 src="/contact-bg.png"
-                class="w-full md:w-2/5 absolute md:relative h-full object-cover -z-10 md:z-0 opacity-30 md:opacity-100"
+                class="w-full md:w-2/5 fixed md:relative h-full object-cover -z-10 md:z-0 opacity-30 md:opacity-100"
             />
 
             <div class=" h-full w-full">
@@ -39,7 +39,7 @@
                     >
                 </div>
 
-                <div class="flex flex-col leading-8 gap-3 font-primary px-5">
+                <div class="flex flex-col leading-8 gap-3 font-primary px-5 pb-16 sm:pb-0">
                     <a
                         href="tel:+48 506 581 245"
                         class="flex items-center gap-3 highlight w-fit"

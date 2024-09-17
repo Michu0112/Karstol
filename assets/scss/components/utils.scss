@@ -1,0 +1,42 @@
+.underscore {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        height: 100%;
+        background-color: $yellow;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+div.highlight:has(img) {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: $yellow;
+        width: 100%;
+        height: 100%;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    &.hl-left::after {
+        left: -20px;
+        bottom: -20px;
+    }
+
+    &.hl-right::after {
+        right: -20px;
+        bottom: -20px;
+    }
+}
+
+.bg-yellow {
+    background-color: $yellow;
+}
