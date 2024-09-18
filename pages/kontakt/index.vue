@@ -114,6 +114,11 @@ useHead({
             content:
                 'Skontaktuj się z Karstol, specjalistą od schodów na zamówienie. Oferuję darmowy pomiar i wycenę, a także precyzyjne wykonanie schodów dostosowanych do Twojego wnętrza. Znajdziesz tutaj dane kontaktowe, adres oraz informacje, jak się ze mną skontaktować.',
         },
+        {
+            name: 'keywords',
+            content:
+                'schody na zamówienie Brodnica Górna, kontakt Karstol, schody drewniane pomiar i wycena, darmowa wycena schodów Pomorze, schody na beton Brodnica Górna, stolarz Brodnica Górna kontakt, precyzyjne schody Pomorze, kontakt stolarz schody na wymiar, Karstol kontakt telefon email, schody brodnica górna, schody kartuzy, schody pomorskie, schody kartuski',
+        },
     ],
 })
 </script>

@@ -54,12 +54,12 @@ useHead({
         {
             name: 'description',
             content:
-                'Karstol to jednoosobowa firma stolarska specjalizująca się w produkcji schodów na zamówienie. Oferuję w pełni spersonalizowane rozwiązania, dostosowane do indywidualnych wymagań klientów.',
+                'Karstol to jednoosobowa firma stolarska w Brodnicy Górnej specjalizująca się w produkcji schodów na zamówienie. Oferuję w pełni spersonalizowane rozwiązania, dostosowane do indywidualnych wymagań klientów.',
         },
         {
             name: 'keywords',
             content:
-                'schody na zamówienie, stolarz, usługi stolarskie, rzemiosło, precyzyjne wykonanie, lokalny stolarz, pomorze',
+                'schody drewniane, schody na beton, schody wiszące, schody na zamówienie, schody na wymiar, schody Pomorze, producent schodów, montaż schodów, schody drewniane na wymiar, schody do domu, schody nowoczesne, stolarz schody, schody na beton na zamówienie, schody drewniane Pomorze, schody na wymiar Pomorze, schody drewniane do wnętrz, schody dębowe, schody jesionowe, schody wiszące Pomorze, schody spersonalizowane',
         },
         { name: 'author', content: 'Karstol' },
         {
@@ -73,7 +73,7 @@ useHead({
         {
             property: 'og:description',
             content:
-                'Specjalizuję się w tworzeniu schodów na wymiar, oferując spersonalizowane i precyzyjnie wykonane rozwiązania dla klientów lokalnych.',
+                'Specjalizuję się w tworzeniu schodów na wymiar, oferując spersonalizowane i precyzyjnie wykonane rozwiązania. Pomiar i dojazd do klienta za darmo.',
         },
         { property: 'og:image', content: '/images/KARSTOL.png' },
         { property: 'og:url', content: 'https://karstol.com' },

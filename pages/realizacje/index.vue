@@ -187,6 +187,11 @@ useHead({
             content:
                 'Zobacz nasze realizacje schodów na zamówienie w galerii Karstol. Oferujemy różnorodne projekty dopasowane do wizji klientów oraz szczegółowe informacje o rodzajach drewna używanych w naszej pracowni. Skontaktuj się z nami, aby uzyskać wycenę lub więcej informacji.',
         },
+        {
+            name: 'keywords',
+            content:
+                'realizacje schodów drewnianych Pomorze, projekty schodów na zamówienie, schody na beton przykłady realizacji, schody wiszące realizacje Karstol, galeria schodów drewnianych Pomorze, schody na wymiar przykłady, stolarz Brodnica Górna realizacje',
+        },
     ],
 })
 </script>
