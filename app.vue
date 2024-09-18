@@ -75,7 +75,7 @@ useHead({
             content:
                 'Specjalizuję się w tworzeniu schodów na wymiar, oferując spersonalizowane i precyzyjnie wykonane rozwiązania. Pomiar i dojazd do klienta za darmo.',
         },
-        { property: 'og:image', content: 'https://profound-cajeta-1f68cf.netlify.app/images/KARSTOL.png' },
+        { property: 'og:image:secure', content: 'https://profound-cajeta-1f68cf.netlify.app/images/KARSTOL.png' },
         { property: 'og:url', content: 'https://karstol.com' },
         { name: 'twitter:card', content: '/images/KARSTOL.png' },
     ],
