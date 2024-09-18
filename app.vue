@@ -45,4 +45,33 @@ onMounted(() => {
 onUnmounted(() => {
     window.removeEventListener('scroll', handleScroll)
 })
+
+useHead({
+    title: 'Karstol - Profesjonalne schody na zamówienie',
+    meta: [
+        {
+            name: 'description',
+            content:
+                'Karstol to jednoosobowa firma stolarska specjalizująca się w produkcji schodów na zamówienie. Oferuję w pełni spersonalizowane rozwiązania, dostosowane do indywidualnych wymagań klientów.',
+        },
+        {
+            name: 'keywords',
+            content:
+                'schody na zamówienie, stolarz, usługi stolarskie, rzemiosło, precyzyjne wykonanie, lokalny stolarz, pomorze',
+        },
+        { name: 'author', content: 'Karstol' },
+        {
+            property: 'og:title',
+            content: 'Karstol - Profesjonalne schody na zamówienie',
+        },
+        {
+            property: 'og:description',
+            content:
+                'Specjalizuję się w tworzeniu schodów na wymiar, oferując spersonalizowane i precyzyjnie wykonane rozwiązania dla klientów lokalnych.',
+        },
+        { property: 'og:image', content: '/images/KARSTOL.png' },
+        { property: 'og:url', content: 'https://karstol.com' },
+        { name: 'twitter:card', content: '/images/KARSTOL.png' },
+    ],
+})
 </script>
