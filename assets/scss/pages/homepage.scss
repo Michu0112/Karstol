@@ -6,8 +6,11 @@
     }
 
     &_cta {
-        max-width: 670px;
         width: 100%;
+
+        @include mq('lg', 'max') {
+            max-width: none;
+        }
     }
 
     &_services {

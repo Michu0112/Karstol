@@ -1,5 +1,5 @@
 .desktop-nav {
-    @include mq('md', 'max') {
+    @include mq('lg', 'max') {
         display: none;
     }
 }
@@ -16,7 +16,7 @@
         width: 30px;
     }
 
-    @include mq('md', 'min') {
+    @include mq('lg', 'min') {
         display: none;
     }
 
@@ -38,7 +38,7 @@
             transform: translateX(0%);
         }
         
-        @include mq('md', 'min') {
+        @include mq('lg', 'min') {
             display: none;
         }
     }

@@ -4,13 +4,13 @@
         class="h-svh bg-cover homepage_welcome flex flex-col"
     >
         <NavBar />
-        <div class="banner mt-20 md:mt-0 font-primary flex-col w-3/4 pl-5">
+        <div class="banner mt-20 lg:mt-0 font-primary flex-col w-3/4 pl-5">
             <p class="banner_headline">karstol</p>
             <p class="banner_headline">twój stolarz</p>
         </div>
 
         <div class="flex justify-end flex-grow mx-5">
-            <div class="md:w-1/2 flex justify-center items-end sm:items-center">
+            <div class="w-full lg:w-1/2 flex justify-center items-end sm:items-center">
                 <div class="homepage_cta mb-12 sm:mb-0">
                     <p
                         class="font-primary hidden sm:block font-medium text-xl md:text-justify"
