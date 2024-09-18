@@ -67,6 +67,10 @@ useHead({
             content: 'Karstol',
         },
         {
+            property: 'og:site_name',
+            content: 'Karstol',
+        },
+        {
             property: 'og:description',
             content:
                 'Specjalizuję się w tworzeniu schodów na wymiar, oferując spersonalizowane i precyzyjnie wykonane rozwiązania dla klientów lokalnych.',
