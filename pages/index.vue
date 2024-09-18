@@ -1,18 +1,4 @@
 <template>
-    <!-- Google tag (gtag.js) -->
-    <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-C55TJRJH2B"
-    ></script>
-    <script>
-        window.dataLayer = window.dataLayer || []
-        function gtag() {
-            dataLayer.push(arguments)
-        }
-        gtag('js', new Date())
-
-        gtag('config', 'G-C55TJRJH2B')
-    </script>
 
     <div
         style="background-image: url('/homepage-bg.png')"
