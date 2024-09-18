@@ -49,7 +49,10 @@ onUnmounted(() => {
 useHead({
     title: 'Profesjonalne schody na zamówienie',
     titleTemplate: '%s | Karstol',
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon1.ico' }],
+    link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon1.ico' },
+        { rel: 'apple-touch-icon', href: '/apple-icon.png' },
+    ],
     meta: [
         {
             name: 'description',
@@ -74,6 +77,14 @@ useHead({
             property: 'og:description',
             content:
                 'Specjalizuję się w tworzeniu schodów na wymiar, oferując spersonalizowane i precyzyjnie wykonane rozwiązania. Pomiar i dojazd do klienta za darmo.',
+        },
+        {
+            property: 'og:image:secure',
+            content: 'https://karstol.com/images/KARSTOL.png',
+        },
+        {
+            property: 'og:image',
+            content: 'https://karstol.com/images/KARSTOL.png',
         },
         { property: 'og:url', content: 'https://karstol.com' },
         { name: 'twitter:card', content: '/images/KARSTOL.png' },
