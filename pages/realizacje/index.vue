@@ -28,7 +28,7 @@
                     :data-pswp-height="imageDimensions[idx]?.height"
                 >
                     <img
-                        :src="'/images/showOffImages/' + image"
+                        :src="'/images/showOffImages/minimized/' + image"
                         lazy="true"
                     />
                 </a>
