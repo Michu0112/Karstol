@@ -160,7 +160,7 @@ const loadDimensionsForAllImages = async () => {
 
 onMounted(async () => {
     await loadDimensionsForAllImages()
-    
+
     imageRefs.value.forEach((imageRef) => {
         if (imageRef) {
             useNuxtApp().$observeElement(imageRef, 'in-view')
@@ -177,5 +177,16 @@ onMounted(async () => {
         pswpModule: () => import('photoswipe'),
     })
     lightbox.value.init()
+})
+
+useHead({
+    title: 'Realizacje',
+    meta: [
+        {
+            name: 'description',
+            content:
+                'Zobacz nasze realizacje schodów na zamówienie w galerii Karstol. Oferujemy różnorodne projekty dopasowane do wizji klientów oraz szczegółowe informacje o rodzajach drewna używanych w naszej pracowni. Skontaktuj się z nami, aby uzyskać wycenę lub więcej informacji.',
+        },
+    ],
 })
 </script>

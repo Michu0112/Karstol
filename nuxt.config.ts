@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    appId: 'Karstol',
     devServer: {
         host: '0.0.0.0',
     },

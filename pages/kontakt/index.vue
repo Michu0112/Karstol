@@ -105,4 +105,15 @@ onMounted(() => {
     useNuxtApp().$observeElement(contact_content.value, 'in-view')
     useNuxtApp().$observeElement(contact_location.value, 'in-view')
 })
+
+useHead({
+    title: 'Kontakt',
+    meta: [
+        {
+            name: 'description',
+            content:
+                'Skontaktuj się z Karstol, specjalistą od schodów na zamówienie. Oferuję darmowy pomiar i wycenę, a także precyzyjne wykonanie schodów dostosowanych do Twojego wnętrza. Znajdziesz tutaj dane kontaktowe, adres oraz informacje, jak się ze mną skontaktować.',
+        },
+    ],
+})
 </script>
