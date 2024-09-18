@@ -49,7 +49,7 @@ onUnmounted(() => {
 useHead({
     title: 'Profesjonalne schody na zamówienie',
     titleTemplate: '%s | Karstol',
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon1.ico' }],
     meta: [
         {
             name: 'description',
