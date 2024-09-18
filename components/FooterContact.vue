@@ -4,7 +4,7 @@
     >
         <h2 class="text-center text-3xl sm:text-4xl font-semibold">Kontakt:</h2>
         <div
-            class="contact_box flex items-center justify-between py-5 px-20 font-medium"
+            class="contact_box flex items-center justify-between py-5 px-5 sm:px-20 font-medium"
         >
             <div class="flex flex-col leading-8 gap-3">
                 <a
@@ -46,7 +46,7 @@
                 <p>Karol Recław</p>
                 <a
                     href="https://g.co/kgs/pFrFovr"
-                    class="block"
+                    class="block text-nowrap"
                     >Brodnica Górna 83-324</a
                 >
                 <a

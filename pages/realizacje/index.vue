@@ -2,18 +2,29 @@
     <NavBar />
 
     <div class="realizations">
-        <h2 class="text-3xl md:text-5xl font-primary text-center font-medium mt-16">
+        <h2
+            class="text-3xl md:text-5xl font-primary text-center font-medium mt-16"
+        >
             Realizacje
         </h2>
 
         <div class="realizations-section">
-            <h3 class="sub-header text-xl md:text-3xl font-primary mt-12 md:mt-24 text-center">
+            <h3
+                class="sub-header text-xl md:text-3xl font-primary mt-12 md:mt-24 text-center"
+            >
                 Różnorodne i dopasowane do wizji klientów
             </h3>
 
             <div class="realizations-items gap-10 md:gap-20 mt-10 md:mt-20">
-                <div v-for="image in showOffImages">
-                    <img :src="'/images/showOffImages/' + image" lazy="true"/>
+                <div
+                    v-for="(image, idx) in showOffImages"
+                    :ref="(el) => (imageRefs[idx] = el)"
+                    class="opacity-0 translate-y-10"
+                >
+                    <img
+                        :src="'/images/showOffImages/' + image"
+                        lazy="true"
+                    />
                 </div>
             </div>
         </div>
@@ -37,7 +48,9 @@
             <div class="flex flex-col items-center mt-20 gap-16">
                 <p class="text-3xl font-medium font-primary">Rodzaje drewna</p>
                 <div class="flex flex-col items-center gap-5">
-                    <p class="text-base sm:text-lg font-primary font-medium text-center sm:text-left">
+                    <p
+                        class="text-base sm:text-lg font-primary font-medium text-center sm:text-left"
+                    >
                         Pracuję na sprawdzonych gatunkach drewna
                     </p>
                     <p class="text-sm sm:text-base font-primary leading-7">
@@ -46,7 +59,10 @@
                     </p>
                 </div>
 
-                <div class="flex items-center gap-10 md:gap-20 flex-col md:flex-row">
+                <div
+                    class="flex items-center gap-10 md:gap-20 flex-col md:flex-row opacity-0 translate-y-10"
+                    ref="materials"
+                >
                     <div class="flex flex-col items-center gap-10">
                         <img
                             src="/woods/jesion.png"
@@ -84,7 +100,17 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+const imageRefs = ref([])
+const materials = ref(null)
+
+onMounted(() => {
+    imageRefs.value.forEach((imageRef) => {
+        if (imageRef) {
+            useNuxtApp().$observeElement(imageRef, 'in-view')
+        }
+    })
+    useNuxtApp().$observeElement(materials.value, 'in-view')
+})
 
 const showOffImages = computed(() => [
     '20220614_192500.jpg',

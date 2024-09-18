@@ -11,6 +11,7 @@
         ></component>
         <NuxtPage />
         <a
+            v-if="showScrollButton"
             :href="currentPath + '#top'"
             class="fixed bottom-5 right-5 p-2 bg-yellow"
         >
@@ -31,4 +32,17 @@
 <script setup>
 const route = useRoute()
 const currentPath = computed(() => route.path)
+const showScrollButton = ref(false)
+
+const handleScroll = () => {
+    showScrollButton.value = window.scrollY > 200
+}
+
+onMounted(() => {
+    window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+    window.removeEventListener('scroll', handleScroll)
+})
 </script>

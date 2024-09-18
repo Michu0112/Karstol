@@ -4,13 +4,24 @@
         class="h-svh bg-cover homepage_welcome flex flex-col"
     >
         <NavBar />
-        <div class="banner mt-20 lg:mt-0 font-primary flex-col w-3/4 pl-5">
+        <div
+            class="banner animated-left mt-20 lg:mt-0 font-primary flex-col w-3/4 pl-10 relative"
+        >
             <p class="banner_headline">karstol</p>
             <p class="banner_headline">twój stolarz</p>
+
+            <div class="absolute squares">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
         </div>
 
-        <div class="flex justify-end flex-grow mx-5">
-            <div class="w-full lg:w-1/2 flex justify-center items-end sm:items-center">
+        <div
+            class="flex justify-end flex-grow mx-5 opacity-0 translate-y-10"
+            ref="welcome"
+        >
+            <div class="w-full lg:w-1/2 flex justify-center items-end sm:mb-20">
                 <div class="homepage_cta mb-12 sm:mb-0">
                     <p
                         class="font-primary hidden sm:block font-medium text-xl md:text-justify"
@@ -20,10 +31,10 @@
                     </p>
                     <span
                         class="font-primary font-medium mt-5 block text-justify leading-7"
-                        >Jesteśmy małą rodzinną manufakturą, tworzącą głównie
-                        drewniane schody. Nasze realizacje wykonujemy na terenie
-                        całej Polski. Zapraszam do zapoznania się z naszymi
-                        realizacjami.
+                        >Jesteśmy małą rodzinną manufakturą działającą już ponad
+                        , tworzącą głównie drewniane schody. Nasze realizacje
+                        wykonujemy na terenie całej Polski. Zapraszam do
+                        zapoznania się z naszymi realizacjami.
                     </span>
 
                     <NuxtLink
@@ -38,7 +49,8 @@
 
     <div
         id="services"
-        class="homepage_services py-20 sm:py-0 sm:h-screen flex items-center"
+        class="homepage_services py-20 sm:py-0 sm:h-screen flex items-center opacity-0 translate-y-10"
+        ref="services"
     >
         <div
             class="flex flex-col gap-16 sm:gap-0 sm:justify-between homepage_services_wrapper h-full flex-1 py-5"
@@ -106,8 +118,9 @@
     </div>
 
     <div
-        class="homepage_generations lg:h-screen bg-cover bg-no-repeat bg-center"
+        class="homepage_generations lg:h-screen bg-cover bg-no-repeat bg-center opacity-0 translate-y-10"
         style="background-image: url('/generations.png')"
+        ref="generations"
     >
         <div class="banner flex-col">
             <p>Firma</p>
@@ -117,7 +130,8 @@
     </div>
 
     <div
-        class="homepage_beginning lg:h-screen bg-no-repeat bg-center flex items-center px-10 gap-10 md:gap-16"
+        class="homepage_beginning lg:h-screen bg-no-repeat bg-center flex items-center px-10 gap-10 md:gap-16 opacity-0 translate-y-10"
+        ref="beginning"
     >
         <div
             class="content-section flex flex-col flex-1 justify-between lg:h-full py-20 gap-10 lg:gap-0"
@@ -166,7 +180,8 @@
 
         <div class="flex flex-col gap-10 md:gap-20 my-10 md:my-20">
             <div
-                class="flex md:px-0 xl:px-32 gap-20 items-center flex-col-reverse md:flex-row"
+                class="flex md:px-0 xl:px-32 gap-20 items-center flex-col-reverse md:flex-row opacity-0 translate-y-10"
+                ref="professional"
             >
                 <div class="text-box">
                     <h3 class="font-primary text-2xl font-medium mb-10">
@@ -190,7 +205,8 @@
             </div>
 
             <div
-                class="flex md:px-0 xl:px-32 gap-20 items-center flex-col md:flex-row"
+                class="flex md:px-0 xl:px-32 gap-20 items-center flex-col md:flex-row opacity-0 translate-y-10"
+                ref="individual"
             >
                 <div class="hl-left highlight flex-1 w-4/5 sm:w-3/4 md:w-full">
                     <img src="/indywidualne-podejście.jpg" />
@@ -213,7 +229,8 @@
             </div>
 
             <div
-                class="flex md:px-0 xl:px-32 gap-20 items-center flex-col-reverse md:flex-row"
+                class="flex md:px-0 xl:px-32 gap-20 items-center flex-col-reverse md:flex-row opacity-0 translate-y-10"
+                ref="precision"
             >
                 <div class="text-box">
                     <h3 class="font-primary text-2xl font-medium mb-10">
@@ -230,7 +247,7 @@
                     </p>
                 </div>
                 <div class="hl-right highlight flex-1 w-4/5 sm:w-3/4 md:w-full">
-                    <img src="/indywidualne-podejscie.jpg" />
+                    <img src="/precyzja.jpg" />
                 </div>
             </div>
         </div>
@@ -238,7 +255,8 @@
 
     <div
         id="process"
-        class="homepage_process mx-5 md:mx-10 my-16 md:my-32 pt-5"
+        class="homepage_process mx-5 md:mx-10 my-16 md:my-32 pt-5 opacity-0 translate-y-10"
+        ref="process"
     >
         <h2
             class="font-primary text-3xl md:text-5xl font-medium underscore w-fit"
@@ -320,3 +338,25 @@
 
     <FooterContact />
 </template>
+
+<script setup>
+const welcome = ref(null)
+const services = ref(null)
+const generations = ref(null)
+const beginning = ref(null)
+const professional = ref(null)
+const individual = ref(null)
+const precision = ref(null)
+const process = ref(null)
+
+onMounted(() => {
+    useNuxtApp().$observeElement(welcome.value, 'in-view')
+    useNuxtApp().$observeElement(services.value, 'in-view')
+    useNuxtApp().$observeElement(generations.value, 'in-view')
+    useNuxtApp().$observeElement(beginning.value, 'in-view')
+    useNuxtApp().$observeElement(professional.value, 'in-view')
+    useNuxtApp().$observeElement(individual.value, 'in-view')
+    useNuxtApp().$observeElement(precision.value, 'in-view')
+    useNuxtApp().$observeElement(process.value, 'in-view')
+})
+</script>

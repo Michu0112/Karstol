@@ -21,4 +21,107 @@
             font-weight: 600;
         }
     }
+
+    & .squares {
+        display: flex;
+        right: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: calc(100% - 48px);
+
+        & .square {
+            width: 70px;
+            height: 70px;
+            border: 3px solid black;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+
+            &:first-of-type {
+                align-self: flex-start;
+                animation-delay: 1s;
+            }
+
+            &:nth-of-type(2) {
+                align-self: center;
+                margin-left: -3px;
+                animation-delay: 1.5s;
+            }
+
+            &:nth-of-type(3) {
+                align-self: flex-end;
+                margin-left: -3px;
+                animation-delay: 1.8s;
+            }
+        }
+
+        @include mq('lg', 'max') {
+            display: none;
+        }
+    }
+
+    &.animated-left {
+        transition: opacity 0.5s ease-in-out;
+        max-height: 190px;
+
+        & .banner_headline {
+            opacity: 0;
+            animation: fadeIn 1s forwards ease-in-out;
+            &:nth-child(1) {
+                animation-delay: 1s;
+            }
+
+            &:nth-child(2) {
+                animation-delay: 1.3s;
+            }
+        }
+
+        @include mq('2xl', 'max') {
+            animation: expandWidth75 1s forwards ease-in-out;
+        }
+
+        @include mq('2xl', 'min') {
+            animation: expandWidth60 1s forwards ease-in-out;
+        }
+
+        @include mq('lg', 'max') {
+            max-height: none;
+        }
+
+        @include mq('md', 'max') {
+            max-height: 146px;
+        }
+
+        @include mq('sm', 'max') {
+            max-height: 98px;
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes expandWidth60 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 60%;
+    }
+}
+
+@keyframes expandWidth75 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 75%;
+    }
 }

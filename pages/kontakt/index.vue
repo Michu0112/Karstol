@@ -1,22 +1,29 @@
 <template>
     <div class="h-screen">
-        <!--         <div class="banner justify-end flex flex-row w-3/5">
-            <p class="banner_headline font-primary w-fit p-4">Kontakt</p>
-        </div> -->
         <div class="flex items-center h-dvh gap-14 lg:gap-28 relative">
             <img
                 src="/contact-bg.png"
                 class="w-full md:w-2/5 fixed md:relative h-full object-cover -z-10 md:z-0 opacity-30 md:opacity-100"
             />
 
-            <div class=" h-full w-full">
+            <div class="h-full w-full">
                 <NavBar />
 
-                <div class="banner mt-5 w-3/4 md:w-full">
-                    <p class="headline p-5 text-3xl md:text-6xl font-primary font-semibold">kontakt</p>
+                <div
+                    class="banner mt-5 w-3/4 md:w-full translate-y-10 opacity-0"
+                    ref="banner"
+                >
+                    <p
+                        class="headline p-5 text-3xl md:text-6xl font-primary font-semibold"
+                    >
+                        kontakt
+                    </p>
                 </div>
 
-                <p class="font-primary text-xl leading-7 font-semibold mt-10 mb-10 md:mb-20 px-5 whitespace-break-spaces">
+                <p
+                    class="font-primary text-xl leading-7 font-semibold mt-10 mb-10 md:mb-20 px-5 whitespace-break-spaces translate-y-10 opacity-0"
+                    ref="cta_text"
+                >
                     ______Potrzebujesz schodów dopasowanych do Twojego wnętrza ?
                     <span class="block leading-7 mt-5">
                         Zapraszam do kontaktu telefonicznego. Oferuję darmowy
@@ -24,7 +31,10 @@
                     </span>
                 </p>
 
-                <div class="leading-8 font-primary mb-10 px-5">
+                <div
+                    class="leading-8 font-primary mb-10 px-5 translate-y-10 opacity-0"
+                    ref="contact_location"
+                >
                     <p>Karol Recław</p>
                     <a
                         href="https://g.co/kgs/pFrFovr"
@@ -39,7 +49,10 @@
                     >
                 </div>
 
-                <div class="flex flex-col leading-8 gap-3 font-primary px-5 pb-16 sm:pb-0">
+                <div
+                    class="flex flex-col leading-8 gap-3 font-primary px-5 pb-16 sm:pb-0 translate-y-10 opacity-0"
+                    ref="contact_content"
+                >
                     <a
                         href="tel:+48 506 581 245"
                         class="flex items-center gap-3 highlight w-fit"
@@ -79,3 +92,17 @@
         </div>
     </div>
 </template>
+
+<script setup>
+const banner = ref(null)
+const cta_text = ref(null)
+const contact_content = ref(null)
+const contact_location = ref(null)
+
+onMounted(() => {
+    useNuxtApp().$observeElement(banner.value, 'in-view')
+    useNuxtApp().$observeElement(cta_text.value, 'in-view')
+    useNuxtApp().$observeElement(contact_content.value, 'in-view')
+    useNuxtApp().$observeElement(contact_location.value, 'in-view')
+})
+</script>
