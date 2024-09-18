@@ -15,17 +15,23 @@
                 Różnorodne i dopasowane do wizji klientów
             </h3>
 
-            <div class="realizations-items gap-10 md:gap-20 mt-10 md:mt-20">
-                <div
+            <div
+                id="gallery"
+                class="realizations-items gap-10 md:gap-20 mt-10 md:mt-20"
+            >
+                <a
+                    :href="'/images/showOffImages/' + image"
                     v-for="(image, idx) in showOffImages"
                     :ref="(el) => (imageRefs[idx] = el)"
-                    class="opacity-0 translate-y-10"
+                    class="opacity-0 translate-y-10 gallery-item"
+                    :data-pswp-width="imageDimensions[idx]?.width"
+                    :data-pswp-height="imageDimensions[idx]?.height"
                 >
                     <img
                         :src="'/images/showOffImages/' + image"
                         lazy="true"
                     />
-                </div>
+                </a>
             </div>
         </div>
 
@@ -100,18 +106,13 @@
 </template>
 
 <script setup>
+import PhotoSwipeLightbox from 'photoswipe/lightbox'
+import 'photoswipe/style.css'
+
 const imageRefs = ref([])
 const materials = ref(null)
-
-onMounted(() => {
-    imageRefs.value.forEach((imageRef) => {
-        if (imageRef) {
-            useNuxtApp().$observeElement(imageRef, 'in-view')
-        }
-    })
-    useNuxtApp().$observeElement(materials.value, 'in-view')
-})
-
+const lightbox = ref(null)
+const imageDimensions = ref([])
 const showOffImages = computed(() => [
     '20220614_192500.jpg',
     '20220615_153345.jpg',
@@ -132,4 +133,48 @@ const showOffImages = computed(() => [
     '20240712_202623.jpg',
     '20240712_202653.jpg',
 ])
+
+const loadImageDimensions = async (imageUrl) => {
+    return new Promise((resolve) => {
+        const img = new Image()
+
+        img.src = imageUrl
+
+        img.onload = () => {
+            resolve({
+                width: img.width,
+                height: img.height,
+            })
+        }
+    })
+}
+
+const loadDimensionsForAllImages = async () => {
+    imageDimensions.value = await Promise.all(
+        showOffImages.value.map((image) =>
+            loadImageDimensions('/images/showOffImages/' + image)
+        )
+    )
+}
+
+onMounted(async () => {
+    await loadDimensionsForAllImages()
+    
+    imageRefs.value.forEach((imageRef) => {
+        if (imageRef) {
+            useNuxtApp().$observeElement(imageRef, 'in-view')
+        }
+    })
+
+    useNuxtApp().$observeElement(materials.value, 'in-view')
+
+    lightbox.value = new PhotoSwipeLightbox({
+        gallery: '#gallery',
+        children: 'a.gallery-item',
+        preload: [2, 3],
+        bgClickAction: 'close',
+        pswpModule: () => import('photoswipe'),
+    })
+    lightbox.value.init()
+})
 </script>
