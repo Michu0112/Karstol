@@ -1,0 +1,21 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #fdfdfd;
+}
+
+@import './reset.scss';
+@import './typography/index.scss';
+
+/* components */
+@import './components/navBar.scss';
+@import './components/button.scss';
+@import './components/contact.scss';
+@import './components/banner.scss';
+@import './components/links.scss';
+@import './components/utils.scss';
+
+/* pages */
+@import './pages/homepage.scss';
+@import './pages/realizations.scss';

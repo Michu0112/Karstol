@@ -1,0 +1,70 @@
+.desktop-nav {
+    @include mq('lg', 'max') {
+        display: none;
+    }
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 20px;
+    right: 0;
+    padding: 10px;
+    background-color: $yellow;
+    z-index: 1000;
+
+    & svg {
+        width: 30px;
+    }
+
+    @include mq('lg', 'min') {
+        display: none;
+    }
+
+    &-content {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 90vw;
+        background-color: whitesmoke;
+        transition: all 0.25s;
+        z-index: 1000;
+
+        &.inactive {
+            transform: translateX(100%);
+        }
+
+        &.active {
+            transform: translateX(0%);
+        }
+        
+        @include mq('lg', 'min') {
+            display: none;
+        }
+    }
+}
+
+.nav-bar {
+    &-item {
+        position: relative;
+        font-size: 24px;
+
+        &::after {
+            content: '';
+            display: block;
+            background-color: $text-color;
+            height: 1px;
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        @include mq('md', 'max') {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        @include mq('sm', 'max') {
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,168 @@
+.homepage {
+    &_welcome {
+        @include mq('sm', 'max') {
+            background-position: top;
+        }
+    }
+
+    &_cta {
+        width: 100%;
+
+        @include mq('lg', 'max') {
+            max-width: none;
+        }
+    }
+
+    &_services {
+        position: relative;
+        margin-left: 40px;
+
+        &_wrapper {
+            max-height: 760px;
+            margin-right: 20px;
+            z-index: 1;
+        }
+
+        & .services_list {
+            font-size: 24px;
+
+            @include mq('md', 'max') {
+                font-size: 20px;
+            }
+
+            & .ok-icon {
+                @include mq('sm', 'max') {
+                    width: 30px;
+                }
+            }
+        }
+
+        & .image {
+            @include mq('lg', 'max') {
+                width: 70%;
+            }
+            @include mq('md', 'max') {
+                display: none;
+            }
+        }
+
+        & .decoration-section {
+            z-index: 0;
+
+            @include mq('md', 'max') {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0.3;
+                background-size: cover;
+            }
+        }
+
+        @include mq('md', 'max') {
+            margin: 0;
+            padding-left: 20px;
+        }
+    }
+
+    &_beginning {
+        position: relative;
+
+        & .content-section {
+            z-index: 1;
+        }
+
+        & .decoration-section {
+            & img {
+                @include mq('md', 'max') {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            @include mq('md', 'max') {
+                position: absolute;
+                height: 100%;
+                left: 0;
+                top: 0;
+                width: 100%;
+                z-index: 0;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    &_generations {
+        position: relative;
+
+        & .banner {
+            background-color: $yellow;
+            font-family: 'Montserrat';
+            font-size: 100px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 50%;
+            font-weight: 500;
+
+            & * {
+                line-height: 90px;
+
+                @include mq('lg', 'max') {
+                    line-height: normal;
+                }
+            }
+
+            @include mq('lg', 'max') {
+                font-size: 60px;
+            }
+
+            @include mq('md', 'max') {
+                font-size: 40px;
+                top: 60%;
+            }
+
+            @include mq('sm', 'max') {
+                left: 30%;
+                width: 70%;
+            }
+        }
+
+        @include mq('lg', 'max') {
+            height: 500px;
+        }
+    }
+
+    &_process {
+        & .steps {
+            max-width: 1200px;
+            width: 100%;
+
+            & .list {
+                font-family: 'Montserrat';
+                padding-left: 20px;
+                width: fit-content;
+
+                & li {
+                    padding: 20px 0;
+
+                    @include mq('md', 'max') {
+                        text-align: justify;
+                    }
+                }
+
+                @include mq('md', 'max') {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+.text-box {
+    flex: 2;
+
+    @include mq('xl', 'max') {
+        flex: 1;
+    }
+}

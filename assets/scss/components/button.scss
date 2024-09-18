@@ -1,0 +1,14 @@
+.btn {
+    background-color: black;
+    padding: 15px 0px;
+    width: 100%;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+
+    @include mq('sm', 'max') {
+        font-size: 24px;
+    }
+}
