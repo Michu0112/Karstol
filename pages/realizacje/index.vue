@@ -30,6 +30,7 @@
                     <img
                         :src="'/images/showOffImages/minimized/' + image"
                         lazy="true"
+                        alt="Image of stairs"
                     />
                 </a>
             </div>
