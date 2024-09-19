@@ -159,8 +159,6 @@ const loadDimensionsForAllImages = async () => {
 }
 
 onMounted(async () => {
-    await loadDimensionsForAllImages()
-
     imageRefs.value.forEach((imageRef) => {
         if (imageRef) {
             useNuxtApp().$observeElement(imageRef, 'in-view')
@@ -177,6 +175,8 @@ onMounted(async () => {
         pswpModule: () => import('photoswipe'),
     })
     lightbox.value.init()
+
+    await loadDimensionsForAllImages()
 })
 
 useHead({
