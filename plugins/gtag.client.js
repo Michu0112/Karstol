@@ -13,11 +13,9 @@ export default defineNuxtPlugin((nuxtApp) => {
     useHead({
         script: [
             {
-                src: `https://www.googletagmanager.com/gtag/js?id=G-C55TJRJH2B`,
+                src: `https://www.googletagmanager.com/gtag/js?id=${gtagId}`,
                 async: true,
             },
         ],
     })
-
-    console.log("gtag activated")
 })

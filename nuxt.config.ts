@@ -4,6 +4,11 @@ export default defineNuxtConfig({
     devServer: {
         host: '0.0.0.0',
     },
+    runtimeConfig: {
+        public: {
+            gtagId: 'G-C55TJRJH2B',
+        },
+    },
     site: {
         url: 'https://karstol.com',
     },
