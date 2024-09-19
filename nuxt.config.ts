@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     },
     compatibilityDate: '2024-04-03',
     devtools: { enabled: true },
-    plugins: ['~/plugins/intersection-observer.js'],
+    plugins: ['~/plugins/intersection-observer.js', '~/plugins/gtag.client.js'],
     css: ['~/assets/scss/main.scss'],
     modules: [
         '@nuxtjs/tailwindcss',
