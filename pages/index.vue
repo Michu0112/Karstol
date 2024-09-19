@@ -6,10 +6,10 @@
     >
         <NavBar />
         <div
-            class="banner animated-left mt-20 lg:mt-0 font-primary flex-col w-3/4 pl-10 relative"
+            class="banner animated-left mt-20 lg:mt-0 font-primary flex-col w-3/4 pl-5 relative"
         >
-            <p class="banner_headline">karstol</p>
-            <p class="banner_headline">twój stolarz</p>
+            <p class="banner_headline">KARSTOL</p>
+            <p class="banner_headline">TWÓJ STOLARZ</p>
 
             <div class="absolute squares">
                 <div class="square"></div>

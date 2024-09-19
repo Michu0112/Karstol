@@ -61,38 +61,15 @@
 
     &.animated-left {
         transition: opacity 0.5s ease-in-out;
-        max-height: 190px;
-
-        & .banner_headline {
-            opacity: 0;
-            animation: fadeIn 1s forwards ease-in-out;
-            &:nth-child(1) {
-                animation-delay: 1s;
-            }
-
-            &:nth-child(2) {
-                animation-delay: 1.3s;
-            }
-        }
+        transform: translateX(-100%);
+        animation: expand 1s forwards ease-in-out;
 
         @include mq('2xl', 'max') {
-            animation: expandWidth75 1s forwards ease-in-out;
+            width: 80%;
         }
 
         @include mq('2xl', 'min') {
-            animation: expandWidth60 1s forwards ease-in-out;
-        }
-
-        @include mq('lg', 'max') {
-            max-height: none;
-        }
-
-        @include mq('md', 'max') {
-            max-height: 146px;
-        }
-
-        @include mq('sm', 'max') {
-            max-height: 98px;
+            width: 60%;
         }
     }
 }
@@ -108,20 +85,11 @@
     }
 }
 
-@keyframes expandWidth60 {
+@keyframes expand {
     from {
-        width: 0;
+        transform: translateX(-100%);
     }
     to {
-        width: 60%;
-    }
-}
-
-@keyframes expandWidth75 {
-    from {
-        width: 0;
-    }
-    to {
-        width: 75%;
+        transform: translateX(0);
     }
 }

@@ -16,7 +16,7 @@
                     <p
                         class="headline p-5 text-3xl md:text-6xl font-primary font-semibold"
                     >
-                        kontakt
+                        KONTAKT
                     </p>
                 </div>
 
