@@ -6,19 +6,21 @@
             'flex-wrap': isCurrentPage('kontakt'),
         }"
     >
-        <NuxtLink
+        <a
             v-if="!isCurrentPage('index')"
-            to="/"
+            href="/"
             class="px-5 py-6 color-primary font-primary nav-bar-item"
-            >powrót</NuxtLink
         >
+            powrót
+        </a>
+
         <div
             class="flex items-center nav-bar gap-3"
             :class="{
                 'w-full': !isCurrentPage('kontakt'),
                 'flex-wrap': isCurrentPage('kontakt'),
                 'justify-end': !isCurrentPage('kontakt'),
-                'justify-between': isCurrentPage('kontakt')
+                'justify-between': isCurrentPage('kontakt'),
             }"
         >
             <NuxtLink
