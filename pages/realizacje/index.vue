@@ -31,6 +31,8 @@
                         :src="'/images/showOffImages/minimized/' + image"
                         lazy="true"
                         alt="Image of stairs"
+                        width="100%"
+                        height="100%"
                     />
                 </a>
             </div>
@@ -159,14 +161,6 @@ const loadDimensionsForAllImages = async () => {
 }
 
 onMounted(async () => {
-    imageRefs.value.forEach((imageRef) => {
-        if (imageRef) {
-            useNuxtApp().$observeElement(imageRef, 'in-view')
-        }
-    })
-
-    useNuxtApp().$observeElement(materials.value, 'in-view')
-
     lightbox.value = new PhotoSwipeLightbox({
         gallery: '#gallery',
         children: 'a.gallery-item',
@@ -175,6 +169,14 @@ onMounted(async () => {
         pswpModule: () => import('photoswipe'),
     })
     lightbox.value.init()
+
+    imageRefs.value.forEach((imageRef) => {
+        if (imageRef) {
+            useNuxtApp().$observeElement(imageRef, 'in-view')
+        }
+    })
+
+    useNuxtApp().$observeElement(materials.value, 'in-view')
 
     await loadDimensionsForAllImages()
 })
