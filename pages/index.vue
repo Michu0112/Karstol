@@ -31,8 +31,7 @@
                     </p>
                     <span
                         class="font-primary font-medium mt-5 block text-justify leading-7"
-                        >Jesteśmy małą rodzinną manufakturą działającą już od 2016 r.
-                        , tworzącą głównie drewniane schody. Nasze realizacje
+                        >Jesteśmy małą rodzinną manufakturą działającą już od 2016 r. Tworzącą głównie drewniane schody. Nasze realizacje
                         wykonujemy na terenie całej Polski. Zapraszam do
                         zapoznania się z naszymi realizacjami.
                     </span>
