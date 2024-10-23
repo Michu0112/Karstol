@@ -27,11 +27,11 @@
                     <p
                         class="font-primary hidden sm:block font-medium text-xl md:text-justify"
                     >
-                        ______Zakład stolarski Karstol zrodził się z pasji do 2016 r. tworzenia w naturalnym materiale, jakim jest drewno.
+                        ______Zakład stolarski Karstol zrodził się z pasji do tworzenia w naturalnym materiale, jakim jest drewno.
                     </p>
                     <span
                         class="font-primary font-medium mt-5 block text-justify leading-7"
-                        >Jesteśmy małą rodzinną manufakturą działającą już od 
+                        >Jesteśmy małą rodzinną manufakturą działającą już od 2016 r.
                         , tworzącą głównie drewniane schody. Nasze realizacje
                         wykonujemy na terenie całej Polski. Zapraszam do
                         zapoznania się z naszymi realizacjami.
