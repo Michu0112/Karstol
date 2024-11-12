@@ -1,5 +1,4 @@
 <template>
-
     <div
         style="background-image: url('/homepage-bg.png')"
         class="h-svh bg-cover homepage_welcome flex flex-col"
@@ -27,13 +26,15 @@
                     <p
                         class="font-primary hidden sm:block font-medium text-xl md:text-justify"
                     >
-                        ______Zakład stolarski Karstol zrodził się z pasji do tworzenia w naturalnym materiale, jakim jest drewno.
+                        ______Zakład stolarski Karstol zrodził się z pasji do
+                        tworzenia w naturalnym materiale, jakim jest drewno.
                     </p>
                     <span
                         class="font-primary font-medium mt-5 block text-justify leading-7"
-                        >Jesteśmy małą rodzinną manufakturą działającą już od 2016r. Tworzącą głównie drewniane schody. Nasze realizacje
-                        wykonujemy na terenie całej Polski. Zapraszam do
-                        zapoznania się z naszymi realizacjami.
+                        >Jesteśmy małą rodzinną manufakturą działającą już od
+                        2016r. Tworzącą głównie drewniane schody. Nasze
+                        realizacje wykonujemy na terenie całej Polski. Zapraszam
+                        do zapoznania się z naszymi realizacjami.
                     </span>
 
                     <NuxtLink
@@ -307,31 +308,20 @@
         <h2
             class="font-primary text-3xl md:text-5xl font-medium underscore w-fit"
         >
-            Aktualności
+            Zobacz co nowego!
         </h2>
 
         <div
-            class="fb-page justify-center my-10 md:my-20"
-            data-href="https://www.facebook.com/p/Us%C5%82ugi-Stolarskie-Brodnica-G%C3%B3rna-100042681206354/?paipv=0&amp;eav=AfbISkT1FqcJkI_NK_vTQ2-K_h5jwlneZJEQAab7AM4-TtBkMnMJ5dELlHm9eMvc3fM&amp;_rdr"
-            data-show-posts="true"
-            data-width="1000"
-            data-height="600"
-            data-hide-cta="true"
-            data-small-header="false"
-            data-adapt-container-width="true"
-            data-hide-cover="false"
-            data-show-facepile="false"
-            style="display: flex !important"
+            class="flex items-center justify-evenly md:justify-between max-w-64 w-full mx-auto my-10 md:my-20"
         >
-            <blockquote
-                cite="https://www.facebook.com/p/Us%C5%82ugi-Stolarskie-Brodnica-G%C3%B3rna-100042681206354/?paipv=0&amp;eav=AfbISkT1FqcJkI_NK_vTQ2-K_h5jwlneZJEQAab7AM4-TtBkMnMJ5dELlHm9eMvc3fM&amp;_rdr"
-                class="fb-xfbml-parse-ignore"
+            <a
+                v-for="(social, idx) in socials"
+                :href="social.link"
+                class="flex flex-col items-center justify-center w-16 h-16 hover:scale-110 duration-150"
+                :key="idx"
             >
-                <a
-                    href="https://www.facebook.com/p/Us%C5%82ugi-Stolarskie-Brodnica-G%C3%B3rna-100042681206354/?paipv=0&amp;eav=AfbISkT1FqcJkI_NK_vTQ2-K_h5jwlneZJEQAab7AM4-TtBkMnMJ5dELlHm9eMvc3fM&amp;_rdr"
-                    >Usługi Stolarskie Brodnica Górna</a
-                >
-            </blockquote>
+                <component :is="social.icon" />
+            </a>
         </div>
     </div>
 
@@ -339,6 +329,9 @@
 </template>
 
 <script setup>
+import InstagramIcon from '~/components/InstagramIcon.vue'
+import FacebookIcon from '~/components/FacebookIcon.vue'
+
 const welcome = ref(null)
 const services = ref(null)
 const generations = ref(null)
@@ -347,6 +340,17 @@ const professional = ref(null)
 const individual = ref(null)
 const precision = ref(null)
 const process = ref(null)
+
+const socials = [
+    {
+        icon: FacebookIcon,
+        link: 'https://www.facebook.com/profile.php?id=61566524663004',
+    },
+    {
+        icon: InstagramIcon,
+        link: 'https://www.instagram.com/schody_karstol/',
+    },
+]
 
 onMounted(() => {
     useNuxtApp().$observeElement(welcome.value, 'in-view')

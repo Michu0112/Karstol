@@ -16,12 +16,7 @@ export default defineNuxtConfig({
     devtools: { enabled: true },
     plugins: ['~/plugins/intersection-observer.js', '~/plugins/gtag.client.js'],
     css: ['~/assets/scss/main.scss'],
-    modules: [
-        '@nuxtjs/tailwindcss',
-        '@nuxtjs/google-fonts',
-        '@nuxt/icon',
-        '@nuxtjs/seo',
-    ],
+    modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', '@nuxt/icon', '@nuxtjs/seo', '@nuxt/image'],
     vite: {
         css: {
             preprocessorOptions: {
