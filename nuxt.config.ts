@@ -5,16 +5,14 @@ export default defineNuxtConfig({
         host: '0.0.0.0',
     },
     runtimeConfig: {
-        public: {
-            gtagId: 'G-C55TJRJH2B',
-        },
+        public: {},
     },
     site: {
         url: 'https://karstol.com',
     },
     compatibilityDate: '2024-04-03',
     devtools: { enabled: true },
-    plugins: ['~/plugins/intersection-observer.js', '~/plugins/gtag.client.js'],
+    plugins: ['~/plugins/intersection-observer.js'],
     css: ['~/assets/scss/main.scss'],
     modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', '@nuxt/icon', '@nuxtjs/seo', '@nuxt/image'],
     vite: {
